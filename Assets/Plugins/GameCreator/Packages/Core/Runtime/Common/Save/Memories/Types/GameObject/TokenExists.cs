@@ -1,0 +1,23 @@
+using System;
+using UnityEngine;
+
+namespace GameCreator.Runtime.Common
+{
+    [Serializable]
+    public class TokenExists : Token
+    {
+        [SerializeField]
+        private bool m_Exists;
+
+        // PROPERTIES: ----------------------------------------------------------------------------
+
+        public bool Exists => this.m_Exists;
+        
+        // CONSTRUCTORS: --------------------------------------------------------------------------
+        
+        public TokenExists(GameObject target) : base()
+        {
+            this.m_Exists = target != null;
+        }
+    }
+}

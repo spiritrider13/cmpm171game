@@ -1,0 +1,4 @@
+repository "CMPM171@Game171@cloud"
+  path "/"
+    br "/main"
+    co "/main"
