@@ -20,6 +20,6 @@ MonoBehaviour:
     - rid: 2734535504167698435
       type: {class: WelcomeRepository, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
       data:
-        m_OpenOnStartup: 1
+        m_OpenOnStartup: 0
         m_WelcomeData:
           pages: []
