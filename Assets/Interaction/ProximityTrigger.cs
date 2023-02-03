@@ -1,14 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.Events;
 using UnityEngine;
-//This class will enable and disable a script 
-//of the type specified
+//This class will make the player able to interact with objects in front of them
 public class ProximityTrigger : MonoBehaviour
 {
     //public string EventName;
-    public Component TriggeredName;
+  //  public UnityEvent 
   //  public bool inBounds = false;
-
     //
     public void OnCollisionEnter()
     {

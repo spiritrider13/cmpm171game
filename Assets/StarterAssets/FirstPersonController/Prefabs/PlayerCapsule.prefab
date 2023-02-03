@@ -340,6 +340,7 @@ GameObject:
   - component: {fileID: 1978471637655604388}
   - component: {fileID: 5420857361349278248}
   - component: {fileID: 8616685848737228376}
+  - component: {fileID: 9162947247270576910}
   m_Layer: 8
   m_Name: PlayerCapsule
   m_TagString: Player
@@ -545,3 +546,60 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &9162947247270576910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8616685848737228372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c2bff3f8461c487282857e4071921cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Bag:
+    rid: 5749722405316329472
+  m_Stock:
+    m_Stock: []
+    m_Wealth: []
+  m_SkinUI: {fileID: 0}
+  m_Wearer:
+    m_Property:
+      rid: 5749722405316329473
+  references:
+    version: 2
+    RefIds:
+    - rid: 5749722405316329472
+      type: {class: BagList, ns: GameCreator.Runtime.Inventory, asm: GameCreator.Runtime.Inventory}
+      data:
+        m_Equipment:
+          m_Equipment: {fileID: 0}
+          m_EquipmentRuntime:
+            m_Keys: 
+            m_Values: []
+        m_Wealth:
+          m_Currencies:
+            m_Keys: []
+            m_Values: 
+        m_Shape:
+          m_HasMaxWeight: 0
+          m_MaxWeight:
+            m_Property:
+              rid: 5749722405316329474
+          m_HasMaxHeight: 0
+          m_Height: 200
+        m_Content:
+          m_Cells:
+            m_Keys: []
+            m_Values: []
+          m_Stack:
+            m_Keys: []
+            m_Values: []
+          m_Items: []
+    - rid: 5749722405316329473
+      type: {class: GetGameObjectSelf, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+    - rid: 5749722405316329474
+      type: {class: GetDecimalInteger, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Value: 150

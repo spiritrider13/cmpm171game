@@ -1,23 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-//
-public class PickUpable : MonoBehaviour
+
+public class PickUp : MonoBehaviour, IInteract
 {
     // Start is called before the first frame update
     void Start()
     {
-
+        
     }
-
-     private void OnE(){
-    
-
-}
 
     // Update is called once per frame
     void Update()
     {
         
+    }
+   public void Interact()
+    {
+       
+        Debug.Log("hitthequan");
     }
 }

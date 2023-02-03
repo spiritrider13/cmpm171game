@@ -47,6 +47,8 @@ namespace StarterAssets
 		public void OnLaunch(InputValue value){
 			
 		}
+		public void OnEInteract(InputValue value){
+		}
 #endif
 
 
