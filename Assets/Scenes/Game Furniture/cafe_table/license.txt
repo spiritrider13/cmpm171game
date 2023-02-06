@@ -1,0 +1,11 @@
+Model Information:
+* title:	Cafe table
+* source:	https://sketchfab.com/3d-models/cafe-table-9eb6fff4fbe64a4a858733e8f00628f0
+* author:	sergeilihandristov (https://sketchfab.com/sergeilihandristov)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Cafe table" (https://sketchfab.com/3d-models/cafe-table-9eb6fff4fbe64a4a858733e8f00628f0) by sergeilihandristov (https://sketchfab.com/sergeilihandristov) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
