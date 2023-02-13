@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 129038e8166d74031a86b8545896ab42, type: 3}
+  m_Name: CustomerSkelly
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_CollisionDetection: 0
+  m_Volumes:
+    rid: 5749722631289176139
+  references:
+    version: 2
+    RefIds:
+    - rid: 5749722631289176139
+      type: {class: Volumes, ns: GameCreator.Runtime.Characters, asm: GameCreator.Runtime.Core}
+      data:
+        m_Volumes:
+        - rid: 5749722631289176140
+    - rid: 5749722631289176140
+      type: {class: VolumeBox, ns: GameCreator.Runtime.Characters, asm: GameCreator.Runtime.Core}
+      data:
+        m_IsExpanded: 1
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_Bone:
+          m_IsExpanded: 1
+          m_Breakpoint: 0
+          m_IsEnabled: 1
+          m_Type: 0
+          m_Human: 0
+          m_Path: 
+        m_Joint:
+          rid: 5749722631289176141
+        m_Center: {x: 0, y: 0, z: 0}
+        m_Size: {x: 12, y: 12, z: 12}
+    - rid: 5749722631289176141
+      type: {class: JointNone, ns: GameCreator.Runtime.Characters, asm: GameCreator.Runtime.Core}

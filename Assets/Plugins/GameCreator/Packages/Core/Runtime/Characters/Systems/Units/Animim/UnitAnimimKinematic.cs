@@ -61,8 +61,14 @@ namespace GameCreator.Runtime.Characters
 
         public override void OnUpdate()
         {
+
+            //stops twitch
+            //return;
+
+
+
             base.OnUpdate();
-            
+    
             if (this.m_Animator == null) return;
             if (!this.m_Animator.gameObject.activeInHierarchy) return;
 
