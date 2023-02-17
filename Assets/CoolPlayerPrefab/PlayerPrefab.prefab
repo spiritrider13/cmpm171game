@@ -606,6 +606,7 @@ GameObject:
   m_Component:
   - component: {fileID: 968318101282951273}
   - component: {fileID: 4950720801128170589}
+  - component: {fileID: 4550616524118685932}
   m_Layer: 0
   m_Name: PlayerPrefab
   m_TagString: Untagged
@@ -646,7 +647,7 @@ MonoBehaviour:
     m_UpdateTime: 0
   m_Kernel:
     m_Player:
-      rid: 5749722631289176064
+      rid: 5749722716976447495
     m_Motion:
       rid: 5749722631289176065
     m_Driver:
@@ -673,13 +674,6 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
-    - rid: 5749722631289176064
-      type: {class: UnitPlayerDirectional, ns: GameCreator.Runtime.Characters, asm: GameCreator.Runtime.Core}
-      data:
-        m_IsControllable: 1
-        m_InputMove:
-          m_Input:
-            rid: 5749722631289176074
     - rid: 5749722631289176065
       type: {class: UnitMotionController, ns: GameCreator.Runtime.Characters, asm: GameCreator.Runtime.Core}
       data:
@@ -687,7 +681,7 @@ MonoBehaviour:
           m_Radius: 2
           m_Mode:
             m_InteractionMode:
-              rid: 5749722631289176075
+              rid: 5749722716976447494
         m_Speed: 4
         m_Rotation: 1800
         m_Mass: 80
@@ -727,12 +721,6 @@ MonoBehaviour:
           m_Rate: 0.25
         m_Twitching:
           m_Weight: 0.5
-    - rid: 5749722631289176074
-      type: {class: InputValueVector2MotionPrimary, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
-    - rid: 5749722631289176075
-      type: {class: InteractionModeNearCharacter, ns: GameCreator.Runtime.Characters, asm: GameCreator.Runtime.Core}
-      data:
-        m_Offset: {x: 0, y: 0, z: 1}
     - rid: 5749722631289176106
       type: {class: UnitFacingDirection, ns: GameCreator.Runtime.Characters, asm: GameCreator.Runtime.Core}
       data:
@@ -744,6 +732,76 @@ MonoBehaviour:
       type: {class: GetRotationDirection, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
       data:
         m_Direction: {x: 0, y: 0, z: 1}
+    - rid: 5749722716976447494
+      type: {class: InteractionModeScreenCenter, ns: GameCreator.Runtime.Characters, asm: GameCreator.Runtime.Core}
+      data:
+        m_MaxDistance: 0.5
+    - rid: 5749722716976447495
+      type: {class: UnitPlayerDirectional, ns: GameCreator.Runtime.Characters, asm: GameCreator.Runtime.Core}
+      data:
+        m_IsControllable: 1
+        m_InputMove:
+          m_Input:
+            rid: 5749722716976447496
+    - rid: 5749722716976447496
+      type: {class: InputValueVector2MotionPrimary, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+--- !u!114 &4550616524118685932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1847217933978965523}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c2bff3f8461c487282857e4071921cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Bag:
+    rid: 5749722739698040845
+  m_Stock:
+    m_Stock: []
+    m_Wealth: []
+  m_SkinUI: {fileID: 0}
+  m_Wearer:
+    m_Property:
+      rid: 5749722739698040846
+  references:
+    version: 2
+    RefIds:
+    - rid: 5749722739698040845
+      type: {class: BagList, ns: GameCreator.Runtime.Inventory, asm: GameCreator.Runtime.Inventory}
+      data:
+        m_Equipment:
+          m_Equipment: {fileID: 0}
+          m_EquipmentRuntime:
+            m_Keys: 
+            m_Values: []
+        m_Wealth:
+          m_Currencies:
+            m_Keys: []
+            m_Values: 
+        m_Shape:
+          m_HasMaxWeight: 0
+          m_MaxWeight:
+            m_Property:
+              rid: 5749722739698040847
+          m_HasMaxHeight: 0
+          m_Height: 200
+        m_Content:
+          m_Cells:
+            m_Keys: []
+            m_Values: []
+          m_Stack:
+            m_Keys: []
+            m_Values: []
+          m_Items: []
+    - rid: 5749722739698040846
+      type: {class: GetGameObjectSelf, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+    - rid: 5749722739698040847
+      type: {class: GetDecimalInteger, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Value: 150
 --- !u!1 &1965512599809850759
 GameObject:
   m_ObjectHideFlags: 0
