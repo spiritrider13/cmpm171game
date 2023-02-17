@@ -29,7 +29,7 @@ public class ProtoLaunch : MonoBehaviour
     //Either have the launcher contain the inventory or have the player contain the inventory,
     // and make an additional event call which the launcher waits for instead of the LMB input event
     //
-   public void OnLaunch()
+   public void LaunchThis()
     {
 
         GameObject NewProjectile = Instantiate(Ammo, transform.position, transform.rotation);
