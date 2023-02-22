@@ -1,14 +1,24 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
+
+//public class UpdateAmmoEvent: UnityEvent <GameObject>
+//{
+
+//}
 public class ProtoLaunch : MonoBehaviour
 {
+   // public UpdateAmmoEvent UAM;
     public GameObject Ammo;
+
     public float LaunchVel = 700f;
+
     // Start is called before the first frame update
     void Start()
     {
+     //   UAM.AddListener(SetProjectile);
         
     }
 
@@ -32,10 +42,14 @@ public class ProtoLaunch : MonoBehaviour
    public void LaunchThis()
     {
 
-        GameObject NewProjectile = Instantiate(Ammo, transform.position, transform.rotation);
+        GameObject NewProjectile = Instantiate(Ammo, transform.GetChild(3).transform.position, transform.GetChild(3).transform.rotation);
         NewProjectile.GetComponent<Rigidbody>().AddRelativeForce(new Vector3( 0, LaunchVel, 0));
     }
 
+  //  public void SetProjectile(GameObject projectile)
+   // {
+   //     Ammo = projectile;
+   // }
     //public void OnSwitch
 
 
