@@ -13,11 +13,19 @@ MonoBehaviour:
   m_Name: inventory.general
   m_EditorClassIdentifier: 
   m_Repository:
+<<<<<<< Updated upstream
     rid: 624774784285671424
   references:
     version: 2
     RefIds:
     - rid: 624774784285671424
+=======
+    rid: 624774916533649408
+  references:
+    version: 2
+    RefIds:
+    - rid: 624774916533649408
+>>>>>>> Stashed changes
       type: {class: InventoryRepository, ns: GameCreator.Runtime.Inventory, asm: GameCreator.Runtime.Inventory}
       data:
         m_Items:
