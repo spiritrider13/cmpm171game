@@ -8,6 +8,7 @@ TagManager:
   - Dish
   - Money
   - Projectile
+  - Seats
   layers:
   - Default
   - TransparentFX

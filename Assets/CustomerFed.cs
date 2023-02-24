@@ -6,6 +6,7 @@ public class CustomerFed : MonoBehaviour
 {
 
     public MoneyMoneyMoney money;
+    public CustomerManager seats;
 
 
     public float speed;
@@ -20,6 +21,7 @@ public class CustomerFed : MonoBehaviour
         //pickRoute = Random.Range(1, 2);
         pickRoute = 2;
         money = GameObject.FindGameObjectWithTag("Money").GetComponent<MoneyMoneyMoney>();
+        seats = GameObject.FindGameObjectWithTag("Seats").GetComponent<CustomerManager>();
         randomSpot = 0;
     }
 
@@ -37,6 +39,10 @@ public class CustomerFed : MonoBehaviour
                         randomSpot += 1;
                     }
                 }
+                else
+                {
+                    seats.seatCustomers();
+                }
                 print("route 1 @ spot");
             }
 
@@ -51,6 +57,10 @@ public class CustomerFed : MonoBehaviour
                     {
                         randomSpot += 1;
                     }
+                }
+                else
+                {
+                    seats.seatCustomers();
                 }
                 print("route 2 @ spot");
             }
