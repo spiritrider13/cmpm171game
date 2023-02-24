@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Navigation : MonoBehaviour
-{
+{/*
     public float speed;
     public Transform[] moveSpots;
     private int randomSpot;
@@ -22,12 +22,6 @@ public class Navigation : MonoBehaviour
             {
                 randomSpot += 1;
             }
-            /*
-            if (gameObject.OnCollisionEnter)
-            {
-
-            }
-            */
         }
-    }
+    }*/
 }
