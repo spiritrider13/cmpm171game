@@ -49,7 +49,7 @@ public class CustomerFed : MonoBehaviour
         {
             print("hit!");
             print(pickRoute);
-            Destroy(collision.gameObject);
+            //Destroy(collision.gameObject);
             money.addScore(4);
             if(pickRoute == 1)
             {
