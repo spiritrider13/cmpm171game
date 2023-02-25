@@ -9,6 +9,8 @@ TagManager:
   - Money
   - Projectile
   - Seats
+  - Customer
+  - Booth1
   layers:
   - Default
   - TransparentFX
