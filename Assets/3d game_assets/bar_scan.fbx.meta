@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 9d6abb210c495464796fa75518cdc585
+guid: 1980375e4d3c6cb4396b300667443a11
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
@@ -33,11 +33,11 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Armature|Armature|Armature|openCloseBar
-      takeName: Armature|Armature|Armature|openCloseBar
-      internalID: -6947378788357841798
+      name: Cylinder|Action
+      takeName: Cylinder|Action
+      internalID: -6434805762499955607
       firstFrame: 0
-      lastFrame: 15
+      lastFrame: 10
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
