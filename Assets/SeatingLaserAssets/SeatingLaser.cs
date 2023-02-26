@@ -48,7 +48,7 @@ public class SeatingLaser : MonoBehaviour
         }
         else
         {
-            Vector3[] BeamLine = new Vector3[] { transform.position, HitHolder.point};
+            Vector3[] BeamLine = new Vector3[] { transform.position, transform.position+(transform.forward*500)};
             Laserbeam.SetPositions(BeamLine);
         }
     }
@@ -59,6 +59,9 @@ public class SeatingLaser : MonoBehaviour
 
         if (hitObj && hitObj.tag == "Seat"  )
         {
+            //Set seat as taken
+          //  hitObj.invoke()
+
   
                 SeatShop.Set("SeatObj", hitObj);
             
