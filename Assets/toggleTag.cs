@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class toggleTag : MonoBehaviour
 {
+<<<<<<< Updated upstream
     public void Seated()
     {
         gameObject.tag = "Seats";
@@ -14,5 +15,15 @@ public class toggleTag : MonoBehaviour
     {
         gameObject.tag = "";
         print("seat is now empty");
+=======
+    public void emptySeat()
+    {
+        gameObject.tag = "Seats";
+    }
+
+    public void seatFilled()
+    {
+        gameObject.tag = "";
+>>>>>>> Stashed changes
     }
 }
