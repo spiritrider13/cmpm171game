@@ -13,15 +13,17 @@ MonoBehaviour:
   m_Name: inventory.general
   m_EditorClassIdentifier: 
   m_Repository:
-    rid: 624774916533649412
+    rid: 5749722942858592256
   references:
     version: 2
     RefIds:
-    - rid: 624774916533649412
+    - rid: 5749722942858592256
       type: {class: InventoryRepository, ns: GameCreator.Runtime.Inventory, asm: GameCreator.Runtime.Inventory}
       data:
         m_Items:
           m_Items:
+          - {fileID: 11400000, guid: 74939c10eb0521946bc49f4aa8110eb8, type: 2}
+          - {fileID: 11400000, guid: 0584441906fef81479ecc30b62d343ec, type: 2}
           - {fileID: 11400000, guid: 1155f0844a14749a4b3087b785bd30e6, type: 2}
           - {fileID: 11400000, guid: 665d41b4092f3489cb6e5864907aec6d, type: 2}
           - {fileID: 11400000, guid: 038313ce921944a8a91c675783784a8d, type: 2}

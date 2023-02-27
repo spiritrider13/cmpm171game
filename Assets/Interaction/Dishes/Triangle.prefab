@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4224892844523121976}
   - component: {fileID: 9063857829986040075}
   - component: {fileID: 5378073029011611465}
+  - component: {fileID: 2660328053221524431}
   m_Layer: 0
   m_Name: Triangle
   m_TagString: Untagged
@@ -182,3 +183,15 @@ MonoBehaviour:
             rid: 5749722833551622160
     - rid: 5749722833551622160
       type: {class: GetGameObjectSelf, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+--- !u!114 &2660328053221524431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3698898509903146060}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84556f7901df30a4ba27a76ac7056526, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -30,12 +30,10 @@ public class SeatQueue : MonoBehaviour
         if (WaitingCustomers.Count > 0)
         {
            WaitingCustomers[0].GetComponent<NavMeshAgent>().SetDestination(custnavdest);
-           
+            WaitingCustomers.RemoveAt(0);
+            return true;
         }
         return false;
     }
-    public void SentToSeat()
-    {
-     //   WaitingCustomers[0].
-    }
+    
 }
