@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 1654428589054100473}
   - component: {fileID: 8211660383423516223}
   - component: {fileID: 6350413550701648565}
-  - component: {fileID: 1953038006606163547}
   - component: {fileID: 5141049808735356881}
+  - component: {fileID: -9032806905018802828}
   m_Layer: 0
   m_Name: ItemDish
   m_TagString: Untagged
@@ -102,18 +102,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &1953038006606163547
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8918287836569051884}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 44b98ab7daf0ba34080b112693824b1c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!65 &5141049808735356881
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -122,8 +110,74 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8918287836569051884}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1.0021453, y: 2, z: 1.0000002}
   m_Center: {x: 0.0010726452, y: 0, z: -0.00000011920929}
+--- !u!114 &-9032806905018802828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8918287836569051884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ecd922218e245e2b85d51f9f08338c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Instructions:
+    m_Instructions:
+    - rid: 5749722832984342578
+    - rid: 5749722833551622144
+  m_InBackground: 1
+  m_TriggerEvent:
+    rid: 5749722832984342538
+  references:
+    version: 2
+    RefIds:
+    - rid: 5749722832984342538
+      type: {class: EventCharacterOnInteract, ns: GameCreator.Runtime.VisualScripting, asm: GameCreator.Runtime.Core}
+      data:
+        m_FromCharacter:
+          m_Option: 1
+          m_GameObject:
+            m_Property:
+              rid: 5749722832984342539
+        m_UseRaycast:
+          m_UseRaycast: 0
+          m_LayerMask:
+            serializedVersion: 2
+            m_Bits: 4294967295
+    - rid: 5749722832984342539
+      type: {class: GetGameObjectPlayer, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+    - rid: 5749722832984342578
+      type: {class: InstructionInventoryAddItem, ns: GameCreator.Runtime.Inventory, asm: GameCreator.Runtime.Inventory}
+      data:
+        m_IsExpanded: 1
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_Item:
+          m_Property:
+            rid: 5749722832984342579
+        m_Bag:
+          m_Property:
+            rid: 5749722832984342580
+    - rid: 5749722832984342579
+      type: {class: GetItemInstance, ns: GameCreator.Runtime.Inventory, asm: GameCreator.Runtime.Inventory}
+      data:
+        m_Item: {fileID: 11400000, guid: 0584441906fef81479ecc30b62d343ec, type: 2}
+    - rid: 5749722832984342580
+      type: {class: GetGameObjectPlayer, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+    - rid: 5749722833551622144
+      type: {class: InstructionGameObjectDestroy, ns: GameCreator.Runtime.VisualScripting, asm: GameCreator.Runtime.Core}
+      data:
+        m_IsExpanded: 1
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_GameObject:
+          m_Property:
+            rid: 5749722833551622146
+    - rid: 5749722833551622146
+      type: {class: GetGameObjectSelf, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
