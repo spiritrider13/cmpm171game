@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Repository:
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     rid: 624775007404818435
   references:
     version: 2
@@ -25,6 +26,13 @@ MonoBehaviour:
     version: 2
     RefIds:
     - rid: 624775007404818439
+>>>>>>> Stashed changes
+=======
+    rid: 624775045235867651
+  references:
+    version: 2
+    RefIds:
+    - rid: 624775045235867651
 >>>>>>> Stashed changes
       type: {class: WelcomeRepository, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
       data:

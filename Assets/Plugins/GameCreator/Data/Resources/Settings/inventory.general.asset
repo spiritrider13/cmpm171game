@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Repository:
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     rid: 624775007404818432
   references:
     version: 2
@@ -53,3 +54,14 @@ MonoBehaviour:
           - {fileID: 11400000, guid: 20b46d65f602e481f81ca38e7a15411a, type: 2}
           - {fileID: 11400000, guid: eb545939992d849f9aeff31e60704ab2, type: 2}
           - {fileID: 11400000, guid: 6d2418c96daee47b9a82a76665cb86e7, type: 2}
+=======
+    rid: 624775045235867648
+  references:
+    version: 2
+    RefIds:
+    - rid: 624775045235867648
+      type: {class: InventoryRepository, ns: GameCreator.Runtime.Inventory, asm: GameCreator.Runtime.Inventory}
+      data:
+        m_Items:
+          m_Items: []
+>>>>>>> Stashed changes

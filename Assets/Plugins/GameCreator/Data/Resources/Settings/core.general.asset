@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Repository:
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     rid: 624775007404818433
   references:
     version: 2
@@ -26,14 +27,25 @@ MonoBehaviour:
     RefIds:
     - rid: 624775007404818437
 >>>>>>> Stashed changes
+=======
+    rid: 624775045235867649
+  references:
+    version: 2
+    RefIds:
+    - rid: 624775045235867649
+>>>>>>> Stashed changes
       type: {class: GeneralRepository, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
       data:
         m_Save:
           m_System:
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
             rid: 624775007404818434
 =======
             rid: 624775007404818438
+>>>>>>> Stashed changes
+=======
+            rid: 624775045235867650
 >>>>>>> Stashed changes
         m_Audio:
           soundEffectsMixer: {fileID: 0}
@@ -42,8 +54,12 @@ MonoBehaviour:
           speechMixer: {fileID: 0}
           userInterfaceMixer: {fileID: 0}
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     - rid: 624775007404818434
 =======
     - rid: 624775007404818438
+>>>>>>> Stashed changes
+=======
+    - rid: 624775045235867650
 >>>>>>> Stashed changes
       type: {class: StoragePlayerPrefs, ns: GameCreator.Runtime.Common.SaveSystem, asm: GameCreator.Runtime.Core}
