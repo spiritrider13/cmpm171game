@@ -135,6 +135,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 0}
   agent: {fileID: 2501614439502368399}
+  money: {fileID: 2994691257448230130, guid: f314f6d2dbdb4ee4e974bb369949c99d, type: 3}
   exit: {fileID: 0}
   customerFed: 0
 --- !u!54 &-4829230063761241697
@@ -259,3 +260,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5a1dc3512e1447479aa79c79407f034, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cam: {fileID: 0}
