@@ -1863,6 +1863,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: booth seat prefab temp
       objectReference: {fileID: 0}
+    - target: {fileID: 808075688895153322, guid: 3379156c637bcb4429dd93f8c263bdf9, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 808075688895153326, guid: 3379156c637bcb4429dd93f8c263bdf9, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -1906,6 +1910,10 @@ PrefabInstance:
     - target: {fileID: 808075688895153326, guid: 3379156c637bcb4429dd93f8c263bdf9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 808075689236768031, guid: 3379156c637bcb4429dd93f8c263bdf9, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1585578349572112831, guid: 3379156c637bcb4429dd93f8c263bdf9, type: 3}
       propertyPath: moveSpot
