@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using GameCreator.Runtime.Variables;
+using UnityEngine.AI;
 
 
 public class SeatingLaser : MonoBehaviour
@@ -9,16 +10,20 @@ public class SeatingLaser : MonoBehaviour
     // Start is called before the first frame update
    
     private bool eventcheck = false;
-    [SerializeField]
-    private LineRenderer Laserbeam;
+    public LineRenderer Laserbeam;
     private LocalNameVariables SeatShop;
     public GameObject hitObj;
+    public CustomerSpawner list;
+    //public toggleTag booth;
+    //public returnPosition seat;
+
+
+    //public NavMeshAgent agent;
+
     void Start()
     {
         SeatShop = GetComponent<LocalNameVariables>();
         Laserbeam = GetComponent<LineRenderer>();
-       
-        
     }
 
     // Update is called once per frame
@@ -43,6 +48,9 @@ public class SeatingLaser : MonoBehaviour
             Vector3[] BeamLine = new Vector3[] { transform.position, HitHolder.point };
             Laserbeam.SetPositions(BeamLine);
              Debug.Log(transform.position);
+            SeatAssign();
+            //list.AssignSeat(transform.position);
+            //agent.SetDestination(transform.position);
             hitObj = HitHolder.transform.gameObject;
 
 
@@ -62,7 +70,9 @@ public class SeatingLaser : MonoBehaviour
         {
             //Set seat as taken
             //  hitObj.invoke()
-            hitObj.tag = "";
+            print("SEAT SELECTED");
+            hitObj.tag = "Untagged";
+            list.AssignSeat(hitObj.GetComponent<toggleTag>().returnMoveSpotPosition());
   
                 SeatShop.Set("SeatObj", hitObj);
             

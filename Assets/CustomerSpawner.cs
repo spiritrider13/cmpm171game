@@ -15,7 +15,7 @@ public class CustomerSpawner : MonoBehaviour
 
     //public SeatQueue line;
 
-    private List<GameObject> WaitingCustomers = new List<GameObject>();
+    public  List<GameObject> WaitingCustomers = new List<GameObject>();
 
 
     public GameObject Lazercomponent;
@@ -30,7 +30,7 @@ public class CustomerSpawner : MonoBehaviour
 
     private void Update()
     {
-        /*if (timer < 3)
+        if (timer < 3)
         {
             timer += Time.deltaTime;
         } else
@@ -39,7 +39,7 @@ public class CustomerSpawner : MonoBehaviour
             transform.position += customerSpacing;
             var clone = Instantiate(customer, transform.position, transform.rotation);
             WaitingCustomers.Add(clone);
-        }*/
+        }
     }
     public bool AssignSeat(Vector3 custnavdest)
     {

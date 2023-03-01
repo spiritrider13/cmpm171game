@@ -4,26 +4,25 @@ using UnityEngine;
 
 public class toggleTag : MonoBehaviour
 {
-<<<<<<< Updated upstream
-    public void Seated()
+    [SerializeField]
+    public Transform moveSpot;
+
+    public bool Seated()
     {
         gameObject.tag = "Seats";
-        print("customer seated");
+        print("seat is empty");
+        return true;
     }
 
-    public void Empty()
+    public bool Empty()
     {
-        gameObject.tag = "";
-        print("seat is now empty");
-=======
-    public void emptySeat()
-    {
-        gameObject.tag = "Seats";
+        gameObject.tag = "Untagged";
+        print("seat is filled");
+        return false;
     }
 
-    public void seatFilled()
+    public Vector3 returnMoveSpotPosition()
     {
-        gameObject.tag = "";
->>>>>>> Stashed changes
+        return moveSpot.transform.position;
     }
 }
