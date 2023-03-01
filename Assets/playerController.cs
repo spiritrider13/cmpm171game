@@ -22,6 +22,7 @@ public class playerController : MonoBehaviour
     public Transform exit;
 
     public bool customerFed = false;
+    public bool customerPaid = false;
     void Start()
     {
         cam = FindObjectOfType<Camera>();
@@ -55,7 +56,8 @@ public class playerController : MonoBehaviour
                 //player can pick up money
                 //seat is empty again for customer
                 print("money");
-                moneyPosition = transform.position + new Vector3(0f, 10f, 0f);
+                customerPaid = true;
+                /*moneyPosition = transform.position + new Vector3(0f, 10f, 0f);
                 var temp = Instantiate(money, moneyPosition, transform.rotation);
                 {
                     if (timer < 1)
@@ -67,11 +69,10 @@ public class playerController : MonoBehaviour
                         timer = 0;
                         Destroy(temp.gameObject);
                     }
-                }
+                }*/
 
                 //exit building
                 agent.SetDestination(exit.position);
-                print(Vector3.Distance(gameObject.transform.position, exit.position));
                 if(Vector3.Distance(gameObject.transform.position, exit.position) < 15)
                 {
                     Destroy(gameObject);
