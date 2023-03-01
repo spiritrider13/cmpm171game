@@ -13,21 +13,21 @@ MonoBehaviour:
   m_Name: core.general
   m_EditorClassIdentifier: 
   m_Repository:
-    rid: 6787943909717442561
+    rid: 6787943930931970049
   references:
     version: 2
     RefIds:
-    - rid: 6787943909717442561
+    - rid: 6787943930931970049
       type: {class: GeneralRepository, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
       data:
         m_Save:
           m_System:
-            rid: 6787943909717442562
+            rid: 6787943930931970050
         m_Audio:
           soundEffectsMixer: {fileID: 0}
           ambientMixer: {fileID: 0}
           musicMixer: {fileID: 0}
           speechMixer: {fileID: 0}
           userInterfaceMixer: {fileID: 0}
-    - rid: 6787943909717442562
+    - rid: 6787943930931970050
       type: {class: StoragePlayerPrefs, ns: GameCreator.Runtime.Common.SaveSystem, asm: GameCreator.Runtime.Core}
