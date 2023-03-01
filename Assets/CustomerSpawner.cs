@@ -21,6 +21,7 @@ public class CustomerSpawner : MonoBehaviour
     public GameObject Lazercomponent;
     public LocalNameVariables SeatGrabbed;
 
+
     private void Start()
     {
         var clone = Instantiate(customer, transform.position, transform.rotation);
@@ -51,5 +52,6 @@ public class CustomerSpawner : MonoBehaviour
         }
         return false;
     }
+
 
 }
