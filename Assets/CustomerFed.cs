@@ -8,6 +8,7 @@ public class CustomerFed : MonoBehaviour
     public MoneyMoneyMoney money;
     public CustomerManager seats;
     public moveToBooth1 booth1;
+    public Transform exit;
 
 
     public float speed;
@@ -48,7 +49,7 @@ public class CustomerFed : MonoBehaviour
         if (collision.gameObject.layer == 7)
         {
             print("hit!");
-            print(pickRoute);
+            /*print(pickRoute);
             //Destroy(collision.gameObject);
             money.addScore(4);
             if(pickRoute == 1)
@@ -58,7 +59,7 @@ public class CustomerFed : MonoBehaviour
             } else if(pickRoute == 2)
             {
                 randomSpot = 3;
-            }
+            }*/
         }
 
     }

@@ -17,7 +17,7 @@ public class SpawnVivTest : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        Destroy(gameObject);
+        //Destroy(gameObject);
 
     }
     public void MoveWithVelocity(Vector3 Velocity)

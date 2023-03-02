@@ -8,14 +8,31 @@ public class SpawnerVivTest : MonoBehaviour
     private SpawnVivTest SpawnPrefab;
 
     [SerializeField]
-    private float SpawnDurationInSeconds = 2;
+    private float SpawnDurationInSeconds = 1;
 
     private ShooterVivTest _spawnShooter;
+
+    public float inventory = 5;
+
+    private bool shot = false;
 
     private void Start()
     {
         _spawnShooter = GetComponent<ShooterVivTest>();
         NewSpawn();
+    }
+
+    private void Update()
+    {
+        /*if(inventory > 0)
+        {
+            if (shot)
+            {
+                inventory -= 1;
+                NewSpawn();
+                shot = false;
+            }
+        }*/
     }
 
     public void NewSpawn()
@@ -27,6 +44,7 @@ public class SpawnerVivTest : MonoBehaviour
     {
         if (other.GetComponent<SpawnVivTest>())
         {
+            //shot = true;
             Invoke(nameof(NewSpawn), SpawnDurationInSeconds);
         }
     }
