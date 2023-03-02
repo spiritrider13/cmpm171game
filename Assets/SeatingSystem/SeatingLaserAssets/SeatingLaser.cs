@@ -48,7 +48,7 @@ public class SeatingLaser : MonoBehaviour
         {
             // Laserbeam.enabled = true;
             hitObj = HitHolder.transform.gameObject;
-            if (hitObj.tag != "Seats")
+            if (hitObj.tag == "Seats")
             {
               //  Laserbeam.startColor = Color.green;
                 Laserbeam.material.color =Color.green;
