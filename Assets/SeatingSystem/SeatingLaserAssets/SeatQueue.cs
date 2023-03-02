@@ -9,11 +9,11 @@ public class SeatQueue : MonoBehaviour
     // Start is called before the first frame update
     public GameObject Lazercomponent;
     public LocalNameVariables SeatGrabbed;
-    private List<GameObject> WaitingCustomers;
+    private List<GameObject> WaitingCustomers = new List<GameObject>();
 
     void Start()
     {
-        WaitingCustomers = new List<GameObject>();
+        //WaitingCustomers = new List<GameObject>();
     }
 
     // Update is called once per frame
@@ -23,6 +23,7 @@ public class SeatQueue : MonoBehaviour
     }
     public void AddToWait(GameObject spawnedcustomer)
     {
+        print("new customer!");
         WaitingCustomers.Add(spawnedcustomer);
     }
     public bool AssignSeat(Vector3 custnavdest)

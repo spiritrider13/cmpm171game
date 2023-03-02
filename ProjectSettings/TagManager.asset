@@ -11,6 +11,7 @@ TagManager:
   - Seats
   - Customer
   - Booth1
+  - Exit
   layers:
   - Default
   - TransparentFX

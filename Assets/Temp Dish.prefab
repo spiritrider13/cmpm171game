@@ -15,8 +15,8 @@ GameObject:
   - component: {fileID: 2781080105724186324}
   - component: {fileID: 411192686116809720}
   m_Layer: 7
-  m_Name: Sphere
-  m_TagString: Untagged
+  m_Name: Temp Dish
+  m_TagString: Dish
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
