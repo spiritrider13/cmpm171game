@@ -14,6 +14,8 @@ public class playerController : MonoBehaviour
 
     public GameObject money;
 
+
+    public toggleTag seatTag;
     float timer = 0;
 
     Vector3 moneyPosition; 
@@ -57,6 +59,7 @@ public class playerController : MonoBehaviour
                 //seat is empty again for customer
                 print("money");
                 customerPaid = true;
+                //seatTag.Empty();
                 /*moneyPosition = transform.position + new Vector3(0f, 10f, 0f);
                 var temp = Instantiate(money, moneyPosition, transform.rotation);
                 {

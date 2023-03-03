@@ -7,9 +7,17 @@ public class MoneySpawner : MonoBehaviour
 
     public GameObject money;
     public playerController customer;
+    public GameObject player;
+    public MoneyMoneyMoney cash;
+    public GameObject seat;
+    public bool pickedUpMoney = false;
+    float timer;
+    bool startPickup = false;
     // Start is called before the first frame update
     void Start()
     {
+        player = GameObject.FindWithTag("Player");
+        cash = GameObject.FindGameObjectWithTag("Money").GetComponent<MoneyMoneyMoney>();
     }
 
     // Update is called once per frame
@@ -20,10 +28,24 @@ public class MoneySpawner : MonoBehaviour
             customer = GameObject.FindWithTag("Customer").GetComponent<playerController>();
             if (customer.customerPaid)
             {
-                Instantiate(money, transform.position + new Vector3 (0f,1f,0f), transform.rotation);
+                money.SetActive(true);
                 customer.customerPaid = false;
-            }
+                //pickedUpMoney = false;
+                startPickup = true;
 
+            }
+        }
+        if (startPickup)
+        {
+            if (Vector3.Distance(player.transform.position, money.transform.position) < 12)
+            {
+                print("picked Up");
+                cash.addScore(1);
+                //pickedUpMoney = true;
+                startPickup = false;
+                gameObject.tag = "Seats";
+                money.SetActive(false); 
+            }
         }
     }
 }
