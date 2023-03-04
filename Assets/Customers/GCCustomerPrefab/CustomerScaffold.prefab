@@ -89,7 +89,7 @@ MonoBehaviour:
     m_Motion:
       rid: 5749722631289176077
     m_Driver:
-      rid: 5749722631289176078
+      rid: 5749722716976447488
     m_Facing:
       rid: 5749722631289176079
     m_Animim:
@@ -143,14 +143,6 @@ MonoBehaviour:
           m_AirJumps: 0
           m_JumpForce: 5
           m_JumpCooldown: 0.5
-    - rid: 5749722631289176078
-      type: {class: UnitDriverController, ns: GameCreator.Runtime.Characters, asm: GameCreator.Runtime.Core}
-      data:
-        m_SkinWidth: 0.08
-        m_PushForce: 1
-        m_MaxSlope: 45
-        m_StepHeight: 0.3
-        m_Plane: 0
     - rid: 5749722631289176079
       type: {class: UnitFacingPivot, ns: GameCreator.Runtime.Characters, asm: GameCreator.Runtime.Core}
       data:
@@ -177,6 +169,14 @@ MonoBehaviour:
       type: {class: InteractionModeNearCharacter, ns: GameCreator.Runtime.Characters, asm: GameCreator.Runtime.Core}
       data:
         m_Offset: {x: 0, y: 0, z: 1}
+    - rid: 5749722716976447488
+      type: {class: UnitDriverNavmesh, ns: GameCreator.Runtime.Characters, asm: GameCreator.Runtime.Core}
+      data:
+        m_AvoidQuality: 4
+        m_AvoidPriority: 50
+        m_AutoMeshLink: 1
+        m_AgentType:
+          m_AgentTypeIndex: 0
 --- !u!114 &6504634110263089314
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -184,7 +184,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6504634110263089313}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0ecd922218e245e2b85d51f9f08338c2, type: 3}
   m_Name: 
