@@ -1,0 +1,1729 @@
+fileFormatVersion: 2
+guid: 334bb9dd2041feb4f8eee79b4cd514a4
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 0
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Customer_Spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 1213
+        width: 104
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 480222a1cd25e0944a09191ec42a65b9
+      internalID: 1870789296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Customer_Spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 1213
+        width: 104
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b1091f23fc26df46bdf127a87cf3bcf
+      internalID: 851015920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Customer_Spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 1213
+        width: 104
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67d7ccea54d05c84b864684f5df1f1e9
+      internalID: 1362301745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Customer_Spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 1213
+        width: 104
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ed81a7c3578b2347b87375aa81d5e5a
+      internalID: 936113334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Customer_Spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 1213
+        width: 104
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 252f64537820f4c48a1183a77a3e5a5c
+      internalID: 119438666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Customer_Spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 1213
+        width: 104
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 098361584ea5d364dafdae8564b195a0
+      internalID: 1884740659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Customer_Spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 1213
+        width: 104
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84c757335af6b8e4d927a3f8ab2fc4e4
+      internalID: 751061918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Customer_Spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 1012
+        y: 1213
+        width: 104
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03661ea7b151850479abd005ed6eb194
+      internalID: -2001512250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Customer_Spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 1154
+        y: 1213
+        width: 104
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5809bb6133586374986c9d0bee494eca
+      internalID: 1143965705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Customer_Spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 1213
+        width: 104
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 555f97a93076337498cc600219f1d197
+      internalID: 1400830422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Customer_Spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 1449
+        y: 1213
+        width: 92
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddebe5a539a0e844fab8d03874e03849
+      internalID: 851800302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Customer_Spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 1011
+        width: 104
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e33bbf87b095d349b29191d7597fdc1
+      internalID: -605511353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Customer_Spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 1011
+        width: 104
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ab3d5911541f7740acb777a8f15bb41
+      internalID: 1338078095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Customer_Spritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 1011
+        width: 104
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47bd712376be6cb438a0b18f0547dedb
+      internalID: 744031236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Customer_Spritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 1011
+        width: 104
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bbc7db052db2f84886af7baa25d35fd
+      internalID: -1949687889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Customer_Spritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 1011
+        width: 92
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 922c94e6f829e7b46bf82b374cca759e
+      internalID: -1086155440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Customer_Spritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 731
+        y: 1011
+        width: 85
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e45e08d9709422d4399689f58f83133e
+      internalID: 1940781998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Customer_Spritesheet_17
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 1011
+        width: 86
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cb28e41af906cd46982ae67f8c12add
+      internalID: 2080300726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Customer_Spritesheet_18
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 1011
+        width: 99
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 411a6c2e5add5e841a12a7c249f72a96
+      internalID: 2063196680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Customer_Spritesheet_19
+      rect:
+        serializedVersion: 2
+        x: 1157
+        y: 1011
+        width: 86
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9763dd8c1612e54db37fdb7598722bc
+      internalID: -1462768842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Customer_Spritesheet_20
+      rect:
+        serializedVersion: 2
+        x: 1314
+        y: 1011
+        width: 85
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5ce27a0dd12b9a4d8f418f5d37f55ad
+      internalID: 1264693496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Customer_Spritesheet_21
+      rect:
+        serializedVersion: 2
+        x: 1449
+        y: 1011
+        width: 92
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33c1559b3640a89468d404391456aabd
+      internalID: 1184736187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Customer_Spritesheet_22
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 809
+        width: 86
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b93758b6693c684ebd4f01670a21081
+      internalID: 864111520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Customer_Spritesheet_23
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 809
+        width: 92
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0585baf72651a394ea1b537ff57693f8
+      internalID: 241348683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Customer_Spritesheet_24
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 809
+        width: 86
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7715aea0673127348ac1317cb51c67b8
+      internalID: 774452966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Customer_Spritesheet_25
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 809
+        width: 99
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b0ad8474d27a62479b9a6f6027af99d
+      internalID: 1064097168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Customer_Spritesheet_26
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 809
+        width: 104
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 390a0773eb2947a4f82db6d8eb0ed7cf
+      internalID: 30272716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Customer_Spritesheet_27
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 809
+        width: 104
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fc62b01af5344f4bbe33b52a59665f1
+      internalID: -337880039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Customer_Spritesheet_28
+      rect:
+        serializedVersion: 2
+        x: 871
+        y: 809
+        width: 104
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f52dbceeaa721dc479d164f6e6ec4181
+      internalID: 188942180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Customer_Spritesheet_29
+      rect:
+        serializedVersion: 2
+        x: 1013
+        y: 809
+        width: 104
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba70d07bb4c2d0f4a94fa4695a160983
+      internalID: -807188845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Customer_Spritesheet_30
+      rect:
+        serializedVersion: 2
+        x: 1154
+        y: 811
+        width: 104
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6f85f4147dc71a40ab3c89949d2c635
+      internalID: 1938124732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Customer_Spritesheet_31
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 811
+        width: 104
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3bd1df4a10af044f90d41457f39e272
+      internalID: 1970362908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Customer_Spritesheet_32
+      rect:
+        serializedVersion: 2
+        x: 1449
+        y: 809
+        width: 92
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc403604fabc0464dbb9ea9c9ffaedde
+      internalID: 1283923828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Customer_Spritesheet_33
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 609
+        width: 104
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66853a8b2a7a56446b1ee21d948a1288
+      internalID: -1705018645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Customer_Spritesheet_34
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 609
+        width: 104
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20c76ba957d3cd742a813a8db48d6ff2
+      internalID: -316307898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Customer_Spritesheet_35
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 607
+        width: 92
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 259ff74ca54fa9f4987a53acca990127
+      internalID: 1700410313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Customer_Spritesheet_36
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 607
+        width: 92
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6279809b285ba7a44a8d323fa08b731e
+      internalID: 1468811762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Customer_Spritesheet_37
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 607
+        width: 92
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ee8620b2e2b7244286209c8c9627bc0
+      internalID: 1340224700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Customer_Spritesheet_38
+      rect:
+        serializedVersion: 2
+        x: 731
+        y: 607
+        width: 92
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1590845f419f5c341bb884ff818c4855
+      internalID: 933707756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Customer_Spritesheet_39
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 607
+        width: 92
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0d92f10d9f409b448aac31dbb9187e5
+      internalID: 1249868110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Customer_Spritesheet_40
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 607
+        width: 92
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d73555571cd0764b97d5045623096b4
+      internalID: 141468860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Customer_Spritesheet_41
+      rect:
+        serializedVersion: 2
+        x: 1165
+        y: 607
+        width: 92
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 755bedf03fe58a546a01a2097ddb0139
+      internalID: -975803695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Customer_Spritesheet_42
+      rect:
+        serializedVersion: 2
+        x: 1307
+        y: 607
+        width: 92
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c07374e9197431140a3304eca33da678
+      internalID: 541947471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Customer_Spritesheet_43
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 405
+        width: 92
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0376a554ac813164f826d1c97593848d
+      internalID: -1425637874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Customer_Spritesheet_44
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 405
+        width: 92
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42004de29815e0f4a81955d2bd3d58b5
+      internalID: -1937822900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Customer_Spritesheet_45
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 405
+        width: 92
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2d217f6ff1d9d247b839c169f1d6e43
+      internalID: 1472606031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Customer_Spritesheet_46
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 405
+        width: 92
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcdbfd4bc29a8d748a624684ffbedcc4
+      internalID: 117387952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Customer_Spritesheet_47
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 405
+        width: 104
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4281ec0a23a0a8f41aa77023344ba145
+      internalID: 730578432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Customer_Spritesheet_48
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 405
+        width: 104
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecfdbadeb1a3bce4886f98449b7608f1
+      internalID: 1133020340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Customer_Spritesheet_49
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 405
+        width: 104
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56d9841c5fae0714baa3ed5c667b8d28
+      internalID: -207633723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Customer_Spritesheet_50
+      rect:
+        serializedVersion: 2
+        x: 1012
+        y: 405
+        width: 104
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a455174f9c6587c42a4f73da088ad63e
+      internalID: -1031945527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Customer_Spritesheet_51
+      rect:
+        serializedVersion: 2
+        x: 1154
+        y: 405
+        width: 104
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d73224c4d72e11d4d9004c36d09437fd
+      internalID: -1068704072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Customer_Spritesheet_52
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 405
+        width: 105
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cad7b39d82574143b34c67c06f90402
+      internalID: 1916204618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Customer_Spritesheet_53
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 203
+        width: 92
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e84d7dd0b1b1a345b20df646c5bd6ea
+      internalID: -109737301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Customer_Spritesheet_54
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 203
+        width: 92
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bde8cbbda6c49c49953b0dae992cc8d
+      internalID: -833548792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Customer_Spritesheet_55
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 203
+        width: 92
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ec8cab67ac8e11438c165c974b4f7fc
+      internalID: 1528818560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Customer_Spritesheet_56
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 203
+        width: 92
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4bd200f0373a57498a19df7fa03b903
+      internalID: 1045959347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Customer_Spritesheet_57
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 203
+        width: 92
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ae0b7f8bf90fd74ca7ef3a7fa5b4519
+      internalID: -1845430967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Customer_Spritesheet_58
+      rect:
+        serializedVersion: 2
+        x: 731
+        y: 203
+        width: 92
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9165f63140c36f945b2a8b3d314e7789
+      internalID: -1852356213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Customer_Spritesheet_59
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 203
+        width: 92
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66851b0917a126744824bca02823c1cb
+      internalID: -1279630103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Customer_Spritesheet_60
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 203
+        width: 92
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 089880c976b8d0940932126804fb232c
+      internalID: -732969617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Customer_Spritesheet_61
+      rect:
+        serializedVersion: 2
+        x: 1157
+        y: 203
+        width: 92
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad06b031afd39a64e93dcbbafef4f6aa
+      internalID: -28613199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Customer_Spritesheet_62
+      rect:
+        serializedVersion: 2
+        x: 1299
+        y: 203
+        width: 92
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49e247127a88de942a21ad44b61b274a
+      internalID: -356415670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Customer_Spritesheet_63
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 1
+        width: 92
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43c69ca04c267c1458a94e30060238a6
+      internalID: -2039812927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Customer_Spritesheet_64
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 1
+        width: 92
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 402bfcf3be814b642a95f72cf8ac27e3
+      internalID: -1721127502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Customer_Spritesheet_65
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 1
+        width: 92
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8906de4dddc5b3a42837734fb3cbdfe8
+      internalID: -1952520580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Customer_Spritesheet_66
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 1
+        width: 92
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3f84bd36532b294aab4ef148985b002
+      internalID: -1828323285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Customer_Spritesheet_67
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 1
+        width: 92
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a015b0a4dc54d4a43834b43b743618b3
+      internalID: 1488158535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Customer_Spritesheet_68
+      rect:
+        serializedVersion: 2
+        x: 731
+        y: 1
+        width: 92
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b14b0573bd48a734f9815be438cf53fa
+      internalID: 1732979884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Customer_Spritesheet_69
+      rect:
+        serializedVersion: 2
+        x: 881
+        y: 1
+        width: 92
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fcde7b5e59d01b408fa6f2d834ba17d
+      internalID: 1323261710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Customer_Spritesheet_70
+      rect:
+        serializedVersion: 2
+        x: 1023
+        y: 1
+        width: 92
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85e477cf6474bd4439ec57b14bc83074
+      internalID: 1524345605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Customer_Spritesheet_71
+      rect:
+        serializedVersion: 2
+        x: 1165
+        y: 1
+        width: 92
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 213039ff27b65684e83b787724667004
+      internalID: -1508864772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Customer_Spritesheet_72
+      rect:
+        serializedVersion: 2
+        x: 1307
+        y: 1
+        width: 92
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c6a1fca94e4bb14ebe0cc9c240e1561
+      internalID: -1964194419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 7f565d675f127d34b9bc4084ac578ac5
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Customer_Spritesheet_9: 1400830422
+      Customer_Spritesheet_26: 30272716
+      Customer_Spritesheet_18: 2063196680
+      Customer_Spritesheet_13: 744031236
+      Customer_Spritesheet_67: 1488158535
+      Customer_Spritesheet_44: -1937822900
+      Customer_Spritesheet_53: -109737301
+      Customer_Spritesheet_4: 119438666
+      Customer_Spritesheet_1: 851015920
+      Customer_Spritesheet_63: -2039812927
+      Customer_Spritesheet_48: 1133020340
+      Customer_Spritesheet_23: 241348683
+      Customer_Spritesheet_19: -1462768842
+      Customer_Spritesheet_22: 864111520
+      Customer_Spritesheet_15: -1086155440
+      Customer_Spritesheet_52: 1916204618
+      Customer_Spritesheet_46: 117387952
+      Customer_Spritesheet_57: -1845430967
+      Customer_Spritesheet_10: 851800302
+      Customer_Spritesheet_11: -605511353
+      Customer_Spritesheet_51: -1068704072
+      Customer_Spritesheet_68: 1732979884
+      Customer_Spritesheet_60: -732969617
+      Customer_Spritesheet_3: 936113334
+      Customer_Spritesheet_5: 1884740659
+      Customer_Spritesheet_69: 1323261710
+      Customer_Spritesheet_20: 1264693496
+      Customer_Spritesheet_34: -316307898
+      Customer_Spritesheet_30: 1938124732
+      Customer_Spritesheet_72: -1964194419
+      Customer_Spritesheet_56: 1045959347
+      Customer_Spritesheet_70: 1524345605
+      Customer_Spritesheet_32: 1283923828
+      Customer_Spritesheet_33: -1705018645
+      Customer_Spritesheet_55: 1528818560
+      Customer_Spritesheet_71: -1508864772
+      Customer_Spritesheet_24: 774452966
+      Customer_Spritesheet_37: 1340224700
+      Customer_Spritesheet_0: 1870789296
+      Customer_Spritesheet_64: -1721127502
+      Customer_Spritesheet_50: -1031945527
+      Customer_Spritesheet_12: 1338078095
+      Customer_Spritesheet_59: -1279630103
+      Customer_Spritesheet_14: -1949687889
+      Customer_Spritesheet_8: 1143965705
+      Customer_Spritesheet_43: -1425637874
+      Customer_Spritesheet_54: -833548792
+      Customer_Spritesheet_39: 1249868110
+      Customer_Spritesheet_35: 1700410313
+      Customer_Spritesheet_28: 188942180
+      Customer_Spritesheet_40: 141468860
+      Customer_Spritesheet_27: -337880039
+      Customer_Spritesheet_25: 1064097168
+      Customer_Spritesheet_6: 751061918
+      Customer_Spritesheet_66: -1828323285
+      Customer_Spritesheet_7: -2001512250
+      Customer_Spritesheet_61: -28613199
+      Customer_Spritesheet_29: -807188845
+      Customer_Spritesheet_2: 1362301745
+      Customer_Spritesheet_58: -1852356213
+      Customer_Spritesheet_62: -356415670
+      Customer_Spritesheet_31: 1970362908
+      Customer_Spritesheet_47: 730578432
+      Customer_Spritesheet_17: 2080300726
+      Customer_Spritesheet_49: -207633723
+      Customer_Spritesheet_36: 1468811762
+      Customer_Spritesheet_42: 541947471
+      Customer_Spritesheet_65: -1952520580
+      Customer_Spritesheet_41: -975803695
+      Customer_Spritesheet_16: 1940781998
+      Customer_Spritesheet_38: 933707756
+      Customer_Spritesheet_21: 1184736187
+      Customer_Spritesheet_45: 1472606031
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
