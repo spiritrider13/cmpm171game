@@ -11,7 +11,7 @@ public class Timer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        timeText.text = "Gather limbs!";
+        timeText.text = "New customer in 5 seconds.";
     }
 
     // Update is called once per frame
@@ -26,7 +26,7 @@ public class Timer : MonoBehaviour
             countdown -= Time.deltaTime;
         }
         else {
-            Debug.Log("Time's up!");
+            Debug.Log("spawn");
             
 
         }
@@ -39,7 +39,7 @@ public class Timer : MonoBehaviour
     {
         timeDisplay += 1;
         float sec = Mathf.FloorToInt(timeDisplay % 60);
-        timeText.text = string.Format("Gather limbs! {0:00}", sec) + " seconds remaining.";
+        timeText.text = string.Format("New customer in {0:00}", sec) + " seconds.";
 
     }
 }
