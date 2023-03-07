@@ -13,7 +13,7 @@ public class ProtoLaunch : MonoBehaviour
    // public UpdateAmmoEvent UAM;
     public GameObject Ammo;
 
-    public float LaunchVel = 700f;
+    public float LaunchVel = 1000f;
 
     // Start is called before the first frame update
     void Start()

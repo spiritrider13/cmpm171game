@@ -586,7 +586,7 @@ MonoBehaviour:
       type: {class: UnitMotionController, ns: GameCreator.Runtime.Characters, asm: GameCreator.Runtime.Core}
       data:
         m_Interaction:
-          m_Radius: 2
+          m_Radius: 12
           m_Mode:
             m_InteractionMode:
               rid: 5749722716976447494
