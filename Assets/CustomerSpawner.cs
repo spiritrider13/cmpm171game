@@ -8,6 +8,7 @@ public class CustomerSpawner : MonoBehaviour
 {
 
     public GameObject customer;
+    public SpawnBase FoodSpawn;
 
     public float customerId = 1;
 
@@ -22,12 +23,12 @@ public class CustomerSpawner : MonoBehaviour
 
     public GameObject Lazercomponent;
     public LocalNameVariables SeatGrabbed;
-
+    
 
     private void Start()
     {
         var clone = Instantiate(customer, transform.position, transform.rotation);
-        clone.tag = "Customer" + customerId;
+        clone.tag = "Customer" ;
         WaitingCustomers.Add(clone);
         //AssignSeat();
     }
@@ -42,7 +43,7 @@ public class CustomerSpawner : MonoBehaviour
             timer = 0;
             transform.position += customerSpacing;
             var clone = Instantiate(customer, transform.position, transform.rotation);
-            clone.tag = "Customer" + customerId;
+            clone.tag = "Customer" ;
             WaitingCustomers.Add(clone);
         }
     }
@@ -51,6 +52,7 @@ public class CustomerSpawner : MonoBehaviour
         if (WaitingCustomers.Count > 0)
         {
             WaitingCustomers[0].GetComponent<NavMeshAgent>().SetDestination(custnavdest);
+            FoodSpawn.SpawnX(1, 1);
             WaitingCustomers.RemoveAt(0);
             return true;
         }

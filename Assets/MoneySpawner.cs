@@ -39,7 +39,7 @@ public class MoneySpawner : MonoBehaviour
         }
         if (startPickup)
         {
-            print("start");
+          //  print("start");
             if (Vector3.Distance(player.transform.position, money.transform.position) < 12)
             {
                 print("picked Up");
