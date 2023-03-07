@@ -28,15 +28,18 @@ public class MoneySpawner : MonoBehaviour
             customer = GameObject.FindWithTag("Customer").GetComponent<playerController>();
             if (customer.customerPaid)
             {
+                print("money active");
                 money.SetActive(true);
                 customer.customerPaid = false;
                 //pickedUpMoney = false;
                 startPickup = true;
+                customer.customerFed = false;
 
             }
         }
         if (startPickup)
         {
+            print("start");
             if (Vector3.Distance(player.transform.position, money.transform.position) < 12)
             {
                 print("picked Up");
