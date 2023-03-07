@@ -19,9 +19,10 @@ public class AngleToPlayer : MonoBehaviour
 
     void Start()
     {
-        sprite_renderer = GetComponentInChildren<SpriteRenderer>();
-        sprite_animator = GetComponentInChildren<Animator>();
-        
+        sprite_renderer = gameObject.GetComponent<SpriteRenderer>();
+        sprite_animator = gameObject.GetComponent<Animator>();
+        player = GameObject.FindWithTag("Player").transform;
+
     }
 
     // Update is called once per frame

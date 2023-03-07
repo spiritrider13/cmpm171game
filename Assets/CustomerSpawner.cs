@@ -9,6 +9,8 @@ public class CustomerSpawner : MonoBehaviour
 
     public GameObject customer;
 
+    public float customerId = 1;
+
     float timer = 0;
 
     private Vector3 customerSpacing = new Vector3(0f, 0f, -8f);
@@ -25,6 +27,7 @@ public class CustomerSpawner : MonoBehaviour
     private void Start()
     {
         var clone = Instantiate(customer, transform.position, transform.rotation);
+        clone.tag = "Customer" + customerId;
         WaitingCustomers.Add(clone);
         //AssignSeat();
     }
@@ -39,6 +42,7 @@ public class CustomerSpawner : MonoBehaviour
             timer = 0;
             transform.position += customerSpacing;
             var clone = Instantiate(customer, transform.position, transform.rotation);
+            clone.tag = "Customer" + customerId;
             WaitingCustomers.Add(clone);
         }
     }

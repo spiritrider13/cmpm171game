@@ -18,6 +18,9 @@ GameObject:
   - component: {fileID: 1388106641344169912}
   - component: {fileID: -2677266241743107128}
   - component: {fileID: -3099244890811081664}
+  - component: {fileID: 602348267644323728}
+  - component: {fileID: 5540802510072973105}
+  - component: {fileID: -2204561781564972650}
   m_Layer: 0
   m_Name: Target
   m_TagString: Customer
@@ -136,8 +139,10 @@ MonoBehaviour:
   cam: {fileID: 0}
   agent: {fileID: 2501614439502368399}
   money: {fileID: 2994691257448230130, guid: f314f6d2dbdb4ee4e974bb369949c99d, type: 3}
+  seatTag: {fileID: 0}
   exit: {fileID: 0}
   customerFed: 0
+  customerPaid: 0
 --- !u!54 &-4829230063761241697
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -255,9 +260,57 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7954115553622611186}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f5a1dc3512e1447479aa79c79407f034, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   cam: {fileID: 0}
+--- !u!114 &602348267644323728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7954115553622611186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed99f145d0474654bbadc45c8b59b28d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  angle: 0
+  last_index: 0
+--- !u!114 &5540802510072973105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7954115553622611186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be0a90fcd59de7f4696fb8a34b0f4ace, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+--- !u!95 &-2204561781564972650
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7954115553622611186}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 851c9735b81a69344989e7408e85a254, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0

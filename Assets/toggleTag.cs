@@ -7,14 +7,14 @@ public class toggleTag : MonoBehaviour
     [SerializeField]
     public Transform moveSpot;
 
-    public bool Seated()
+    public bool Empty()
     {
         gameObject.tag = "Seats";
         print("seat is empty");
         return true;
     }
 
-    public bool Empty()
+    public bool Seated()
     {
         gameObject.tag = "Untagged";
         print("seat is filled");

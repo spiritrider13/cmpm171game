@@ -4,22 +4,34 @@ using UnityEngine;
 
 public class Money : MonoBehaviour
 {
-    public GameObject player;
-    public MoneyMoneyMoney money;
+    public MoneySpawner spawner;
+
+    public playerController customer;
     // Start is called before the first frame update
     void Start()
     {
-        player = GameObject.FindWithTag("Player");
-        money = GameObject.FindGameObjectWithTag("Money").GetComponent<MoneyMoneyMoney>();
     }
+
 
     // Update is called once per frame
     void Update()
     {
-        if(Vector3.Distance(player.transform.position, transform.position)< 5)
+        
+        /*spawner = GameObject.FindWithTag("Untagged").GetComponent<MoneySpawner>();
+        if (GameObject.FindWithTag("Customer") != null)
         {
-            money.addScore(1);
-            Destroy(gameObject);
+            customer = GameObject.FindWithTag("Customer").GetComponent<playerController>();
+            if (spawner.pickedUpMoney && !customer.customerPaid)
+            {
+                Destroy(gameObject);
+            }
         }
+            /*else if (!pickedUpMoney && temp != null)
+        {
+            
+        }*/
+
+
     }
+
 }
