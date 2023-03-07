@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class TimerManager : MonoBehaviour
 {
@@ -43,6 +44,9 @@ public class TimerManager : MonoBehaviour
                 timeRemaining = 0;
 
                 timerIsRunning = false;
+
+
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 
             }
 

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -623,7 +623,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   customer: {fileID: 7954115553622611186, guid: eb402193170f60a4f934fbd2021658ec, type: 3}
-  customerId: 1
+  FoodSpawn: {fileID: 1091497884}
   WaitingCustomers: []
   Lazercomponent: {fileID: 0}
   SeatGrabbed: {fileID: 0}
@@ -2055,6 +2055,8 @@ GameObject:
   - component: {fileID: 1091497882}
   - component: {fileID: 1091497880}
   - component: {fileID: 1091497883}
+  - component: {fileID: 1091497884}
+  - component: {fileID: 1091497885}
   m_Layer: 0
   m_Name: SphereSpawner
   m_TagString: Untagged
@@ -2069,7 +2071,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1091497879}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 70cccb381b6d36d4382a1ff969471034, type: 3}
   m_Name: 
@@ -2096,7 +2098,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1091497879}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0a7a5b10b02669d499c4f20ef91f1f78, type: 3}
   m_Name: 
@@ -2104,6 +2106,27 @@ MonoBehaviour:
   SpawnPrefab: {fileID: 2781080105724186324, guid: 401d3d276ef875148a418a4fe2a642b5, type: 3}
   SpawnDurationInSeconds: 2
   inventory: 5
+--- !u!114 &1091497884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1091497879}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8123571c0c5ec77489b06d0af49f4e94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawntemplate: {fileID: 9206898970725565582, guid: 401d3d276ef875148a418a4fe2a642b5, type: 3}
+--- !u!33 &1091497885
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1091497879}
+  m_Mesh: {fileID: 4300000, guid: e050c2b16fe384bd994474655a4b4968, type: 2}
 --- !u!1001 &1099125486
 PrefabInstance:
   m_ObjectHideFlags: 0

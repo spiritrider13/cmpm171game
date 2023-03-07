@@ -10,7 +10,7 @@ public class CustomerSpawner : MonoBehaviour
     public GameObject customer;
     public SpawnBase FoodSpawn;
 
-    public float customerId = 1;
+    //public float customerId = 1;
 
     float timer = 0;
 
