@@ -12,6 +12,7 @@ TagManager:
   - Customer
   - Booth1
   - Exit
+  - tut dialog 1
   layers:
   - Default
   - TransparentFX

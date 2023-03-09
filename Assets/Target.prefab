@@ -15,9 +15,13 @@ GameObject:
   - component: {fileID: 2501614439502368399}
   - component: {fileID: 1356121116319152033}
   - component: {fileID: -4829230063761241697}
+<<<<<<< Updated upstream
   - component: {fileID: 1388106641344169912}
   - component: {fileID: -2677266241743107128}
   - component: {fileID: -3099244890811081664}
+=======
+  - component: {fileID: 602348267644323728}
+>>>>>>> Stashed changes
   m_Layer: 0
   m_Name: Target
   m_TagString: Customer
@@ -154,6 +158,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+<<<<<<< Updated upstream
 --- !u!227 &1388106641344169912
 BillboardRenderer:
   m_ObjectHideFlags: 0
@@ -249,6 +254,9 @@ SpriteRenderer:
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &-3099244890811081664
+=======
+--- !u!114 &602348267644323728
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

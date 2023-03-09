@@ -8,8 +8,8 @@ using UnityEngine.AI;
 public class SeatingLaser : MonoBehaviour
 {
     // Start is called before the first frame update
-   
-    private bool eventcheck = false;
+
+    private bool eventcheck;
     public LineRenderer Laserbeam;
     private LocalNameVariables SeatShop;
     public GameObject hitObj;
