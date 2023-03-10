@@ -57,7 +57,6 @@ public class SeatingLaser : MonoBehaviour
             {
                 Laserbeam.material.color= Color.red;
             }
-
             Vector3[] BeamLine = new Vector3[] { transform.position, HitHolder.point };
             Laserbeam.SetPositions(BeamLine);
              Debug.Log(transform.position);

@@ -10,10 +10,14 @@ public class playerController : MonoBehaviour
 
     public NavMeshAgent agent;
 
-    private SeatingLaser laser;
-
+    [SerializeField]
     public GameObject money;
 
+    [SerializeField]
+    public MoneyMoneyMoney cashScore;
+
+    [SerializeField]
+    public GameObject player;
 
     public toggleTag seatTag;
     float timer = 0;
@@ -29,6 +33,8 @@ public class playerController : MonoBehaviour
     {
         cam = FindObjectOfType<Camera>();
         exit = GameObject.FindWithTag("Exit").transform;
+        player = GameObject.FindWithTag("Player");
+        cashScore = GameObject.FindGameObjectWithTag("Money").GetComponent<MoneyMoneyMoney>();
         //exit = FindTagOfType<Exit>();
     }
 
@@ -52,6 +58,14 @@ public class playerController : MonoBehaviour
             {
                 timer = 0;
 
+                var clone = Instantiate(money, transform.position + new Vector3(3f, 0f, 0f), transform.rotation); 
+                if (Vector3.Distance(player.transform.position, clone.transform.position) < 12)
+                {
+                    print("picked Up");
+                    cashScore.addScore(1);
+                    //pickedUpMoney = true;
+                    gameObject.tag = "Seats";
+                }
                 //spawn $$$ on table
                 //tell table that customer has paid (bool)
                 //table spawns money

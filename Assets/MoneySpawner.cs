@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MoneySpawner : MonoBehaviour
 {
-
+    public playerController target;
     public GameObject money;
     public playerController customer;
     public GameObject player;
@@ -16,14 +16,15 @@ public class MoneySpawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        player = GameObject.FindWithTag("Player");
+    //target = gameObject;
+    player = GameObject.FindWithTag("Player");
         cash = GameObject.FindGameObjectWithTag("Money").GetComponent<MoneyMoneyMoney>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(GameObject.FindWithTag("Customer") != null)
+        /*if(GameObject.FindWithTag("Customer") != null)
         {
             customer = GameObject.FindWithTag("Customer").GetComponent<playerController>();
             if (customer.customerPaid)
@@ -36,7 +37,18 @@ public class MoneySpawner : MonoBehaviour
                 customer.customerFed = false;
 
             }
-        }
+        }*/
+
+        /*if ()
+        {
+            print("customer fed");
+            Instantiate(money, transform.position + new Vector3 (0f, 3f, 0f), transform.rotation);
+            /*cash.addScore(1);
+            //pickedUpMoney = true;
+            startPickup = false;
+            gameObject.tag = "Seats";
+            money.SetActive(false);
+        }*/
         if (startPickup)
         {
           //  print("start");

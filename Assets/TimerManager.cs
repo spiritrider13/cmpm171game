@@ -18,7 +18,7 @@ public class TimerManager : MonoBehaviour
 
         // Starts the timer automatically
 
-        timerIsRunning = true;
+        //timerIsRunning = true;
 
     }
 

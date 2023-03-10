@@ -10,6 +10,7 @@ public class tutorial : MonoBehaviour
     public Text shadow;
     public bool startInteraction = false;
     public bool ePushed = false;
+    public TimerManager timerM;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,7 +21,68 @@ public class tutorial : MonoBehaviour
     void Update()
     {
         timer += Time.deltaTime;
-        if(startInteraction && ePushed)
+
+        if (startInteraction && ePushed && timer >= 123)
+        {
+            dialogue.text = "";
+            shadow.text = "";
+            timerM.timerIsRunning = true;
+        }
+        else if (startInteraction && ePushed && timer >= 120)
+        {
+            dialogue.text = "Alright toodleoo!";
+            shadow.text = "Alright toodleoo!";
+        }
+        else if (startInteraction && ePushed && timer >= 110)
+        {
+            dialogue.text = "Oh and one last thing, we're obligated to give you a break so if you need one just go ahead and press the Esc key.";
+            shadow.text = "Oh and one last thing, we're obligated to give you a break so if you need one just go ahead and press the Esc key.";
+        }
+        else if (startInteraction && ePushed && timer >= 100)
+        {
+            dialogue.text = "Alright, that's it for me now. Good luck rookie! I'll be on my vacation now, don't bother reaching out to me, I won't answer.";
+            shadow.text = "Alright, that's it for me now. Good luck rookie! I'll be on my vacation now, don't bother reaching out to me, I won't answer.";
+        }
+        else if (startInteraction && ePushed && timer >= 94)
+        {
+            dialogue.text = "Over here on the right is your inventory, you can't hold much in this gun so be sure to check this often!";
+            shadow.text = "Over here on the right is your inventory, you can't hold much in this gun so be sure to check this often!";
+        }
+        else if (startInteraction && ePushed && timer >= 90)
+        {
+            dialogue.text = "Now here's where you can check how many seats have been taken up.";
+            shadow.text = "Now here's where you can check how many seats have been taken up.";
+        }
+        else if (startInteraction && ePushed && timer >= 86)
+        {
+            dialogue.text = "Once the timer runs out, you can go home. For the day.";
+            shadow.text = "Once the timer runs out, you can go home. For the day.";
+        }
+        else if (startInteraction && ePushed && timer >= 77)
+        {
+            dialogue.text = "Down here's the timer. Surely you didn't think that your shift lasted forever did you? Hahaha... no. That would cost us thousands in insurance fees.";
+            shadow.text = "Down here's the timer. Surely you didn't think that your shift lasted forever did you? Hahaha... no. That would cost us thousands in insurance fees.";
+        }
+        else if (startInteraction && ePushed && timer >= 73)
+        {
+            dialogue.text = "There's a few more icons you should know about";
+            shadow.text = "There's a few more icons you should know about";
+        }
+        else if (startInteraction && ePushed && timer >= 69)
+        {
+            dialogue.text = "You can check your tips up here in the top left corner.";
+            shadow.text = "You can check your tips up here in the top left corner.";
+        }
+        else if (startInteraction && ePushed && timer >= 63)
+        {
+            dialogue.text = "Look, they even left a tip. Go towards it to pick it up";
+            shadow.text = "Look, they even left a tip. Go towards it to pick it up";
+        }
+        else if (startInteraction && ePushed && timer >= 60)
+        {
+            dialogue.text = "See? That wasn't so hard!";
+            shadow.text = "See? That wasn't so hard!";
+        } else if (startInteraction && ePushed)
         {
             dialogue.text = "Now face the customer and shoot the dish at them by clicking the Left Mouse Button.";
             shadow.text = "Now face the customer and shoot the dish at them by clicking the Left Mouse Button.";
