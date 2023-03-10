@@ -8,7 +8,8 @@ public class tutorial : MonoBehaviour
     public float timer;
     public Text dialogue;
     public Text shadow;
-    public bool startInteraction;
+    public bool startInteraction = false;
+    public bool ePushed = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,8 +20,21 @@ public class tutorial : MonoBehaviour
     void Update()
     {
         timer += Time.deltaTime;
+        if(startInteraction && ePushed)
+        {
+            dialogue.text = "Now face the customer and shoot the dish at them by clicking the Left Mouse Button.";
+            shadow.text = "Now face the customer and shoot the dish at them by clicking the Left Mouse Button.";
+        }
+        else if(startInteraction && timer >= 51)
+        {
 
-        if (startInteraction && timer >= 53)
+            dialogue.text = "Pick it up using the E button.";
+            shadow.text = "Pick it up using the E button.";
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                ePushed = true;
+            }
+        }else if (startInteraction && timer >= 45)
         {
             dialogue.text = "Now, we need to feed our customer. Turn around and you will find some food.";
             shadow.text = "Now, we need to feed our customer. Turn around and you will find some food.";
@@ -29,7 +43,7 @@ public class tutorial : MonoBehaviour
         {
             dialogue.text = "As you can see the customer goes where you want.";
             shadow.text = "As you can see the customer goes where you want.";
-            timer = 50;
+            //timer = 50;
         }
         else if(timer >= 37)
         {
