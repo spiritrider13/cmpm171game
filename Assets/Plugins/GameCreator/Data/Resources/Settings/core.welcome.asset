@@ -13,11 +13,19 @@ MonoBehaviour:
   m_Name: core.welcome
   m_EditorClassIdentifier: 
   m_Repository:
+<<<<<<< Updated upstream
     rid: 3042453468691038215
   references:
     version: 2
     RefIds:
     - rid: 3042453468691038215
+=======
+    rid: 6787944209583702027
+  references:
+    version: 2
+    RefIds:
+    - rid: 6787944209583702027
+>>>>>>> Stashed changes
       type: {class: WelcomeRepository, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
       data:
         m_OpenOnStartup: 1

@@ -41,7 +41,7 @@ public class SpawnBase : MonoBehaviour
         for (int x = 0; x < amount; x++)
         {
             Vector3 spawnpos = GetARandomTreePos();
-            GameObject NewProjectile = Instantiate(spawntemplate, spawnpos, gameObject.transform.rotation);
+            GameObject NewProjectile = Instantiate(spawntemplate, spawnpos + new Vector3 (0f,1f,0f), gameObject.transform.rotation);
         }
     }
 }
