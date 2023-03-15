@@ -112,9 +112,11 @@ GameObject:
   - component: {fileID: 6350413550701648565}
   - component: {fileID: 5141049808735356881}
   - component: {fileID: -9032806905018802828}
+  - component: {fileID: 8149356329731739096}
+  - component: {fileID: 6618747808628551984}
   m_Layer: 0
   m_Name: ItemDish
-  m_TagString: Untagged
+  m_TagString: Dish
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -283,3 +285,99 @@ MonoBehaviour:
       type: {class: InputButtonKeyboardPress, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
       data:
         m_Key: 19
+--- !u!114 &8149356329731739096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8918287836569051884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ecd922218e245e2b85d51f9f08338c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Instructions:
+    m_Instructions:
+    - rid: 6787944209583702054
+  m_InBackground: 1
+  m_TriggerEvent:
+    rid: 6787944209583702048
+  references:
+    version: 2
+    RefIds:
+    - rid: 6787944209583702048
+      type: {class: EventCollideWith, ns: GameCreator.Runtime.VisualScripting, asm: GameCreator.Runtime.Core}
+      data:
+        m_Collider:
+          m_Option: 0
+          m_GameObject:
+            m_Property:
+              rid: 6787944209583702059
+    - rid: 6787944209583702054
+      type: {class: InstructionCommonAudioSFXPlay, ns: GameCreator.Runtime.VisualScripting, asm: GameCreator.Runtime.Core}
+      data:
+        m_IsExpanded: 1
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_AudioClip: {fileID: 8300000, guid: 10de95f9d57bffa4fbfe7b7a96062a8b, type: 3}
+        m_WaitToComplete: 0
+        m_Config:
+          m_Volume: 100
+          m_Pitch: {x: 1, y: 1}
+          m_TransitionIn: 0
+          m_UpdateMode: 0
+          m_SpatialBlend: 0
+          m_Target:
+            m_Property:
+              rid: 6787944209583702056
+    - rid: 6787944209583702056
+      type: {class: GetGameObjectSelf, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+    - rid: 6787944209583702059
+      type: {class: GetGameObjectInstance, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_GameObject: {fileID: 7954115553622611186, guid: eb402193170f60a4f934fbd2021658ec, type: 3}
+--- !u!114 &6618747808628551984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8918287836569051884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ecd922218e245e2b85d51f9f08338c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Instructions:
+    m_Instructions:
+    - rid: 6787944209583702064
+  m_InBackground: 1
+  m_TriggerEvent:
+    rid: 6787944209583702061
+  references:
+    version: 2
+    RefIds:
+    - rid: 6787944209583702061
+      type: {class: EventCollideWith, ns: GameCreator.Runtime.VisualScripting, asm: GameCreator.Runtime.Core}
+      data:
+        m_Collider:
+          m_Option: 1
+          m_GameObject:
+            m_Property:
+              rid: 6787944209583702063
+    - rid: 6787944209583702063
+      type: {class: GetGameObjectInstance, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_GameObject: {fileID: 7954115553622611186, guid: eb402193170f60a4f934fbd2021658ec, type: 3}
+    - rid: 6787944209583702064
+      type: {class: InstructionGameObjectDestroy, ns: GameCreator.Runtime.VisualScripting, asm: GameCreator.Runtime.Core}
+      data:
+        m_IsExpanded: 1
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_GameObject:
+          m_Property:
+            rid: 6787944209583702066
+    - rid: 6787944209583702066
+      type: {class: GetGameObjectSelf, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}

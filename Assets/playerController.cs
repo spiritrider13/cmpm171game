@@ -8,6 +8,8 @@ public class playerController : MonoBehaviour
     // Start is called before the first frame update
     public Camera cam;
 
+    public AudioSource eating;
+
     public NavMeshAgent agent;
 
     [SerializeField]
@@ -103,11 +105,12 @@ public class playerController : MonoBehaviour
 
     public void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == "Dish")
+        if (collision.gameObject.tag == "Dish" && !customerFed)
         {
             print("hit!");
 
             customerFed = true;
+            eating.Play();
 
         }
 
