@@ -111,7 +111,7 @@ public class playerController : MonoBehaviour
 
             customerFed = true;
             eating.Play();
-
+            Destroy(collision.gameObject);
         }
 
     }
