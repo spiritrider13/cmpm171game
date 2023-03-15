@@ -133,25 +133,10 @@ MonoBehaviour:
     - rid: 5749722833551622144
   m_InBackground: 1
   m_TriggerEvent:
-    rid: 5749722832984342538
+    rid: 6787944209583702020
   references:
     version: 2
     RefIds:
-    - rid: 5749722832984342538
-      type: {class: EventCharacterOnInteract, ns: GameCreator.Runtime.VisualScripting, asm: GameCreator.Runtime.Core}
-      data:
-        m_FromCharacter:
-          m_Option: 1
-          m_GameObject:
-            m_Property:
-              rid: 5749722832984342539
-        m_UseRaycast:
-          m_UseRaycast: 0
-          m_LayerMask:
-            serializedVersion: 2
-            m_Bits: 4294967295
-    - rid: 5749722832984342539
-      type: {class: GetGameObjectPlayer, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
     - rid: 5749722832984342578
       type: {class: InstructionInventoryAddItem, ns: GameCreator.Runtime.Inventory, asm: GameCreator.Runtime.Inventory}
       data:
@@ -181,3 +166,22 @@ MonoBehaviour:
             rid: 5749722833551622146
     - rid: 5749722833551622146
       type: {class: GetGameObjectSelf, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+    - rid: 6787944209583702020
+      type: {class: EventOnInput, ns: GameCreator.Runtime.VisualScripting, asm: GameCreator.Runtime.Core}
+      data:
+        m_Button:
+          m_Input:
+            rid: 6787944209583702023
+        m_MinDistance:
+          m_MinDistance: 1
+          m_To:
+            m_Property:
+              rid: 6787944209583702022
+          m_Radius: 10
+          m_Offset: {x: 0, y: 0, z: 0}
+    - rid: 6787944209583702022
+      type: {class: GetGameObjectPlayer, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+    - rid: 6787944209583702023
+      type: {class: InputButtonKeyboardPress, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Key: 19
