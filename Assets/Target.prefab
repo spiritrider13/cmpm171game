@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7447820996665234571}
   - component: {fileID: 6193644676923286178}
   - component: {fileID: 8831674294987681140}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: Square
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -135,9 +135,12 @@ GameObject:
   - component: {fileID: 1356121116319152033}
   - component: {fileID: -4829230063761241697}
   - component: {fileID: 602348267644323728}
+
   - component: {fileID: 3113151543569437732}
   - component: {fileID: 7315009417015043609}
-  m_Layer: 0
+
+  m_Layer: 16
+
   m_Name: Target
   m_TagString: Customer
   m_Icon: {fileID: 0}
@@ -157,6 +160,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1220712071049220006}
+  - {fileID: 5819429370379573293}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -233,7 +237,7 @@ NavMeshAgent:
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
-  m_StoppingDistance: 0
+  m_StoppingDistance: 0.5
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
@@ -295,6 +299,7 @@ MonoBehaviour:
   player: {fileID: 0}
   angle: 0
   last_index: 0
+
 --- !u!82 &3113151543569437732
 AudioSource:
   m_ObjectHideFlags: 0
@@ -393,10 +398,12 @@ AudioSource:
     m_RotationOrder: 4
 --- !u!82 &7315009417015043609
 AudioSource:
+
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+
   m_GameObject: {fileID: 7954115553622611186}
   m_Enabled: 1
   serializedVersion: 4
@@ -487,3 +494,4 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+
