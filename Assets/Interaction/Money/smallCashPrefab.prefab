@@ -101,7 +101,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Instructions:
     m_Instructions:
-    - rid: 255464189439508480
+    - rid: 255464189439508510
     - rid: 255464189439508492
   m_InBackground: 1
   m_TriggerEvent:
@@ -109,19 +109,6 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
-    - rid: 255464189439508480
-      type: {class: InstructionCommonDebugText, ns: GameCreator.Runtime.VisualScripting, asm: GameCreator.Runtime.Core}
-      data:
-        m_IsExpanded: 1
-        m_Breakpoint: 0
-        m_IsEnabled: 1
-        m_Message:
-          m_Property:
-            rid: 255464189439508481
-    - rid: 255464189439508481
-      type: {class: GetStringString, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
-      data:
-        m_Value: By JOve
     - rid: 255464189439508487
       type: {class: EventCharacterOnInteract, ns: GameCreator.Runtime.VisualScripting, asm: GameCreator.Runtime.Core}
       data:
@@ -148,6 +135,14 @@ MonoBehaviour:
             rid: 255464189439508494
     - rid: 255464189439508494
       type: {class: GetGameObjectSelf, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+    - rid: 255464189439508510
+      type: {class: InstructionLogicRaiseSignal, ns: GameCreator.Runtime.VisualScripting, asm: GameCreator.Runtime.Core}
+      data:
+        m_IsExpanded: 1
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_Signal:
+          m_String: SmallScore
 --- !u!65 &-8758609225303308995
 BoxCollider:
   m_ObjectHideFlags: 0

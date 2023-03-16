@@ -49,6 +49,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Instructions:
     m_Instructions:
+    - rid: 255464189439508508
     - rid: 255464189439508504
   m_InBackground: 1
   m_TriggerEvent:
@@ -82,6 +83,14 @@ MonoBehaviour:
             rid: 255464189439508506
     - rid: 255464189439508506
       type: {class: GetGameObjectSelf, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+    - rid: 255464189439508508
+      type: {class: InstructionLogicRaiseSignal, ns: GameCreator.Runtime.VisualScripting, asm: GameCreator.Runtime.Core}
+      data:
+        m_IsExpanded: 1
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_Signal:
+          m_String: LargeCash
 --- !u!212 &1908550035313141913
 SpriteRenderer:
   m_ObjectHideFlags: 0
