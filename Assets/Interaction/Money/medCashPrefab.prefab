@@ -101,6 +101,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Instructions:
     m_Instructions:
+    - rid: 255464189439508509
     - rid: 255464189439508498
   m_InBackground: 1
   m_TriggerEvent:
@@ -134,6 +135,14 @@ MonoBehaviour:
             rid: 255464189439508500
     - rid: 255464189439508500
       type: {class: GetGameObjectSelf, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+    - rid: 255464189439508509
+      type: {class: InstructionLogicRaiseSignal, ns: GameCreator.Runtime.VisualScripting, asm: GameCreator.Runtime.Core}
+      data:
+        m_IsExpanded: 1
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_Signal:
+          m_String: MedScore
 --- !u!114 &-1444124069810900426
 MonoBehaviour:
   m_ObjectHideFlags: 0
