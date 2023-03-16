@@ -51,6 +51,7 @@ public class CustomerSpawner : MonoBehaviour
     {
         if (WaitingCustomers.Count > 0)
         {
+            WaitingCustomers[0].BroadcastMessage("StopTimer");
             WaitingCustomers[0].GetComponent<NavMeshAgent>().SetDestination(custnavdest);
             FoodSpawn.SpawnX(1, 1);
             WaitingCustomers.RemoveAt(0);

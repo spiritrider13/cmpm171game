@@ -11,13 +11,14 @@ GameObject:
   - component: {fileID: 3095142911816316440}
   - component: {fileID: 3095142911816316443}
   - component: {fileID: 3095142911816316442}
+  - component: {fileID: 3667525695159154356}
   m_Layer: 0
   m_Name: largecash (1)
   m_TagString: Respawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3095142911816316440
 Transform:
   m_ObjectHideFlags: 0
@@ -40,7 +41,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3095142911816316441}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -99,6 +100,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawner: {fileID: 0}
   customer: {fileID: 0}
+--- !u!114 &3667525695159154356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3095142911816316441}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 219e7b71be1be114697afeaa1f799432, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moneysizes: {fileID: 0}
 --- !u!1 &3548495058127495841
 GameObject:
   m_ObjectHideFlags: 0
@@ -111,9 +125,9 @@ GameObject:
   - component: {fileID: 3548495058127495853}
   - component: {fileID: 3548495058127495852}
   - component: {fileID: 3548495058127495855}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: booth backing
-  m_TagString: Untagged
+  m_TagString: Seats
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -206,6 +220,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3548495058462866165}
   - component: {fileID: 4181616421750583465}
+  - component: {fileID: 5900559304250949453}
   m_Layer: 0
   m_Name: moveSpot
   m_TagString: Untagged
@@ -222,7 +237,7 @@ Transform:
   m_GameObject: {fileID: 3548495058462866164}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.59, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.27098, y: 0.30832, z: 0.29634}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3548495058586338064}
@@ -240,6 +255,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 128ef50a9f0e12949a85f9e611015af9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &5900559304250949453
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3548495058462866164}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &3548495058586338068
 GameObject:
   m_ObjectHideFlags: 0
@@ -384,6 +412,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37898428e086f7946a00d78adbdfa932, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  target: {fileID: 0}
   money: {fileID: 3095142911816316441}
   customer: {fileID: 0}
   player: {fileID: 0}

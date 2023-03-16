@@ -25,5 +25,9 @@ public class toggleTag : MonoBehaviour
     {
         return moveSpot.transform.position;
     }
+   // public void OnCollisionExit(Collision collision)
+   // {
+
+    //}
 
 }
