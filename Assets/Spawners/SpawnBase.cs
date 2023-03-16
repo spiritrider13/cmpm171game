@@ -7,7 +7,6 @@ public class SpawnBase : MonoBehaviour
 {
     // Start is called before the first frame update
     public GameObject spawntemplate;
-    public AudioSource ding;
     void Start()
     {
         
@@ -39,12 +38,10 @@ public class SpawnBase : MonoBehaviour
 
     public void SpawnX(int amount, int interval)
     {
-        //change so dish is served a few seconds after the customer is seated and orders
         for (int x = 0; x < amount; x++)
         {
             Vector3 spawnpos = GetARandomTreePos();
-            GameObject NewProjectile = Instantiate(spawntemplate, spawnpos + new Vector3 (0f,1f,0f), gameObject.transform.rotation);
-            ding.Play();
+            GameObject NewProjectile = Instantiate(spawntemplate, spawnpos, gameObject.transform.rotation);
         }
     }
 }
