@@ -59,7 +59,7 @@ public class SeatingLaser : MonoBehaviour
             }
             Vector3[] BeamLine = new Vector3[] { transform.position, HitHolder.point };
             Laserbeam.SetPositions(BeamLine);
-             Debug.Log(transform.position);
+           //  Debug.Log(transform.position);
            // SeatAssign();
             //list.AssignSeat(transform.position);
             //agent.SetDestination(transform.position);
@@ -86,8 +86,8 @@ public class SeatingLaser : MonoBehaviour
         {
             //Set seat as taken
             //  hitObj.invoke()
-           Debug.Log("SEAT SELECTED");
-            hitObj.tag = "Untagged";
+          // Debug.Log("SEAT SELECTED");
+         // hitObj.tag = "Untagged";
             list.AssignSeat(hitObj.GetComponent<toggleTag>().returnMoveSpotPosition());
   
                 SeatShop.Set("SeatObj", hitObj);

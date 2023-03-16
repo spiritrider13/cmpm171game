@@ -29,12 +29,17 @@ public class playerController : MonoBehaviour
 
     public bool customerFed = false;
     public bool customerPaid = false;
+    private LayerMask LayerSeated;
+    private GameObject Assignedbooth;
+    private Vector3 Neutralizer =new Vector3(1, 0, 1);
     void Start()
     {
         cam = FindObjectOfType<Camera>();
         exit = GameObject.FindWithTag("Exit").transform;
         player = GameObject.FindWithTag("Player");
         cashScore = GameObject.FindGameObjectWithTag("Money").GetComponent<MoneyMoneyMoney>();
+         LayerSeated = LayerMask.NameToLayer("SeatedCustomers");
+        BroadcastMessage("StartTimer");
         //exit = FindTagOfType<Exit>();
     }
 
@@ -89,11 +94,7 @@ public class playerController : MonoBehaviour
                 }*/
 
                 //exit building
-                agent.SetDestination(exit.position);
-                if(Vector3.Distance(gameObject.transform.position, exit.position) < 15)
-                {
-                    Destroy(gameObject);
-                }
+                ExitDiner();
                 //customerFed = false;
             }
 
@@ -109,7 +110,58 @@ public class playerController : MonoBehaviour
 
             customerFed = true;
 
+           Assignedbooth.transform.GetChild(2).transform.GetComponent<MoodMoneySpawn>().MoodBasedTip(GetComponentInChildren<MoodFrame>().tiptype);
+
+
+        }
+        if (collision.gameObject.tag == "Seats")
+        {
+
+            Transform IsForMe;
+            if (collision.gameObject.transform.parent != null)
+            {
+                IsForMe = collision.gameObject.transform.parent;
+            }
+            else IsForMe = collision.gameObject.transform;
+
+          // Debug.Log(Vector3.Dot(IsForMe.GetChild(1).position,Neutralizer)+"waah"+Vector3.Dot(agent.destination,Neutralizer));
+            if (Vector3.Dot(IsForMe.GetChild(1).position,Neutralizer) == Vector3.Dot(agent.destination,Neutralizer))
+            {
+
+                gameObject.layer = LayerSeated;
+                Assignedbooth = IsForMe.gameObject;
+                BroadcastMessage("StartTimer");
+              //Debug.Log(+"HELLO");
+
+            }
+            //print("why god");
+            else {
+              //  print("sussy");
+              //  Debug.Log(IsForMe.GetChild(1).position + "huh" + agent.destination);
+                return;
+            }
+
         }
 
+    }
+
+
+    public void OnCollisionExit(Collision collision)
+    {
+       
+        if(collision.gameObject.tag == "booth seats" && gameObject.layer == LayerSeated)
+        {
+            gameObject.layer = LayerMask.NameToLayer("Customers");
+           // 
+        }
+    }
+   
+    public void ExitDiner()
+    {
+        agent.SetDestination(exit.position);
+        if (Vector3.Distance(gameObject.transform.position, exit.position) < 15)
+        {
+            Destroy(gameObject);
+        }
     }
 }

@@ -715,11 +715,11 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   activeInputHandler: 2
   windowsGamepadBackendHint: 0
-  cloudProjectId: 1178e596-2654-40ea-bf25-7ef1a65ae707
+  cloudProjectId: dbb459f5-a2b7-42bb-b9cb-d1c348da6029
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: CMPM171
-  organizationId: jyuan29
+  projectName: CMPM171 (1)
+  organizationId: bouncebooger_unity
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   playerDataPath: 
