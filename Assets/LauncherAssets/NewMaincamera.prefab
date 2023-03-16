@@ -779,7 +779,6 @@ MonoBehaviour:
   m_Instructions:
     m_Instructions:
     - rid: 5749722834224021568
-    - rid: 6787944209583702039
   m_InBackground: 1
   m_TriggerEvent:
     rid: 5749722834224021567
@@ -812,25 +811,6 @@ MonoBehaviour:
                 m_StringArgument: 
                 m_BoolArgument: 0
               m_CallState: 1
-    - rid: 6787944209583702039
-      type: {class: InstructionCommonAudioSFXPlay, ns: GameCreator.Runtime.VisualScripting, asm: GameCreator.Runtime.Core}
-      data:
-        m_IsExpanded: 1
-        m_Breakpoint: 0
-        m_IsEnabled: 1
-        m_AudioClip: {fileID: 8300000, guid: 90610db140f35ff489ccf00d79ab4a83, type: 3}
-        m_WaitToComplete: 0
-        m_Config:
-          m_Volume: 5
-          m_Pitch: {x: 1, y: 1}
-          m_TransitionIn: 0
-          m_UpdateMode: 0
-          m_SpatialBlend: 1
-          m_Target:
-            m_Property:
-              rid: 6787944209583702041
-    - rid: 6787944209583702041
-      type: {class: GetGameObjectSelf, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
 --- !u!1 &7455689347924763162
 GameObject:
   m_ObjectHideFlags: 0
