@@ -7,9 +7,6 @@ public class playerController : MonoBehaviour
 {
     // Start is called before the first frame update
     public Camera cam;
-    public AudioSource register;
-
-    public AudioSource eating;
 
     public NavMeshAgent agent;
 
@@ -66,14 +63,13 @@ public class playerController : MonoBehaviour
             {
                 timer = 0;
 
-                var clone = Instantiate(money, transform.position + new Vector3(3f, -2f, 0f), transform.rotation); 
+                var clone = Instantiate(money, transform.position + new Vector3(3f, 0f, 0f), transform.rotation); 
                 if (Vector3.Distance(player.transform.position, clone.transform.position) < 12)
                 {
-                    register.Play();
                     print("picked Up");
                     cashScore.addScore(1);
                     //pickedUpMoney = true;
-                    //gameObject.tag = "Seats";
+                    gameObject.tag = "Seats";
                 }
                 //spawn $$$ on table
                 //tell table that customer has paid (bool)
@@ -108,15 +104,11 @@ public class playerController : MonoBehaviour
 
     public void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == "Dish" && !customerFed)
+        if (collision.gameObject.tag == "Dish")
         {
             print("hit!");
 
             customerFed = true;
-
-            eating.Play();
-            Destroy(collision.gameObject);
-
 
            Assignedbooth.transform.GetChild(2).transform.GetComponent<MoodMoneySpawn>().MoodBasedTip(GetComponentInChildren<MoodFrame>().tiptype);
 
