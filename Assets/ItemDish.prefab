@@ -12,12 +12,7 @@ GameObject:
   - component: {fileID: 6350413550701648565}
   - component: {fileID: 5141049808735356881}
   - component: {fileID: -9032806905018802828}
-
-  - component: {fileID: 1654428589054100473}
-  - component: {fileID: 8211660383423516223}
-
   - component: {fileID: 2152536683982678630}
-=y
   - component: {fileID: 8614314874361433209}
   m_Layer: 0
   m_Name: ItemDish
@@ -35,9 +30,7 @@ Transform:
   m_GameObject: {fileID: 8918287836569051884}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-
-  m_LocalScale: {x: 1, y: 1, z: 1}
-
+  m_LocalScale: {x: 2.8738, y: 3.0754185, z: 2.8738}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -90,9 +83,7 @@ MonoBehaviour:
     - rid: 5749722833551622144
   m_InBackground: 1
   m_TriggerEvent:
-
-    rid: 6787944334217445378
-
+    rid: 5749722832984342538
   references:
     version: 2
     RefIds:
@@ -140,60 +131,27 @@ MonoBehaviour:
             rid: 5749722833551622146
     - rid: 5749722833551622146
       type: {class: GetGameObjectSelf, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
-
-    - rid: 6787944334217445378
-      type: {class: EventOnInput, ns: GameCreator.Runtime.VisualScripting, asm: GameCreator.Runtime.Core}
-      data:
-        m_Button:
-          m_Input:
-            rid: 6787944334217445381
-        m_MinDistance:
-          m_MinDistance: 1
-          m_To:
-            m_Property:
-              rid: 6787944334217445380
-          m_Radius: 10
-          m_Offset: {x: 0, y: 0, z: 0}
-    - rid: 6787944334217445380
-      type: {class: GetGameObjectPlayer, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
-    - rid: 6787944334217445381
-      type: {class: InputButtonKeyboardPress, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
-      data:
-        m_Key: 19
---- !u!33 &1654428589054100473
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8918287836569051884}
-  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &8211660383423516223
-MeshRenderer:
-
 --- !u!212 &2152536683982678630
 SpriteRenderer:
-
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8918287836569051884}
   m_Enabled: 1
-
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
+  m_RayTracingMode: 0
   m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
-  m_Materials: []
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -206,7 +164,7 @@ SpriteRenderer:
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
   m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
+  m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
@@ -214,7 +172,17 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: ff2914b4ab9cf3249ab8ddba6607fd68, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 1
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.64, y: 0.64}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!114 &8614314874361433209
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -224,23 +192,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8918287836569051884}
   m_Enabled: 1
   m_EditorHideFlags: 0
-
-  m_Script: {fileID: 11500000, guid: 0ecd922218e245e2b85d51f9f08338c2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Instructions:
-    m_Instructions: []
-  m_InBackground: 1
-  m_TriggerEvent:
-    rid: 6787944334217445377
-  references:
-    version: 2
-    RefIds:
-    - rid: 6787944334217445377
-      type: {class: EventOnStart, ns: GameCreator.Runtime.VisualScripting, asm: GameCreator.Runtime.Core}
-=
   m_Script: {fileID: 11500000, guid: be0a90fcd59de7f4696fb8a34b0f4ace, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-
