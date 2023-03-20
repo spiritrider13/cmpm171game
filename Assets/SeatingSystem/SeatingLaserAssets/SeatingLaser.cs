@@ -87,7 +87,7 @@ public class SeatingLaser : MonoBehaviour
             //Set seat as taken
             //  hitObj.invoke()
           // Debug.Log("SEAT SELECTED");
-         // hitObj.tag = "Untagged";
+          hitObj.GetComponent<toggleTag>().Seated();
             list.AssignSeat(hitObj.GetComponent<toggleTag>().returnMoveSpotPosition());
   
                 SeatShop.Set("SeatObj", hitObj);

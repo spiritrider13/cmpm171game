@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -30,6 +31,8 @@ public class playerController : MonoBehaviour
     public bool customerFed = false;
     public bool customerPaid = false;
     private LayerMask LayerSeated;
+    private LayerMask Layerboothback;
+    private LayerMask Layerboothseat;
     private GameObject Assignedbooth;
     private Vector3 Neutralizer =new Vector3(1, 0, 1);
     void Start()
@@ -38,7 +41,9 @@ public class playerController : MonoBehaviour
         exit = GameObject.FindWithTag("Exit").transform;
         player = GameObject.FindWithTag("Player");
         cashScore = GameObject.FindGameObjectWithTag("Money").GetComponent<MoneyMoneyMoney>();
-         LayerSeated = LayerMask.NameToLayer("SeatedCustomers");
+         LayerSeated = LayerMask.NameToLayer("SeatedCustomers"); 
+        Layerboothback = LayerMask.NameToLayer("booth seats");
+        Layerboothseat= LayerMask.NameToLayer("booth backing");
         BroadcastMessage("StartTimer");
         //exit = FindTagOfType<Exit>();
     }
@@ -63,21 +68,22 @@ public class playerController : MonoBehaviour
             {
                 timer = 0;
 
-                var clone = Instantiate(money, transform.position + new Vector3(3f, 0f, 0f), transform.rotation); 
-                if (Vector3.Distance(player.transform.position, clone.transform.position) < 12)
+                //var clone = Instantiate(money, transform.position + new Vector3(3f, 0f, 0f), transform.rotation); 
+              /*  if (Vector3.Distance(player.transform.position, clone.transform.position) < 12)
                 {
                     print("picked Up");
                     cashScore.addScore(1);
                     //pickedUpMoney = true;
                     gameObject.tag = "Seats";
                 }
+              */
                 //spawn $$$ on table
                 //tell table that customer has paid (bool)
                 //table spawns money
                 //player can pick up money
                 //seat is empty again for customer
-                print("money");
-                customerPaid = true;
+             //   print("money");
+               // customerPaid = true;
                 //seatTag.Empty();
                 /*moneyPosition = transform.position + new Vector3(0f, 10f, 0f);
                 var temp = Instantiate(money, moneyPosition, transform.rotation);
@@ -111,10 +117,10 @@ public class playerController : MonoBehaviour
             customerFed = true;
 
            Assignedbooth.transform.GetChild(2).transform.GetComponent<MoodMoneySpawn>().MoodBasedTip(GetComponentInChildren<MoodFrame>().tiptype);
-
+            Destroy(collision.gameObject);
 
         }
-        if (collision.gameObject.tag == "Seats")
+        if (collision.gameObject.layer == Layerboothseat || collision.gameObject.layer == Layerboothback)
         {
 
             Transform IsForMe;
@@ -124,14 +130,14 @@ public class playerController : MonoBehaviour
             }
             else IsForMe = collision.gameObject.transform;
 
-          // Debug.Log(Vector3.Dot(IsForMe.GetChild(1).position,Neutralizer)+"waah"+Vector3.Dot(agent.destination,Neutralizer));
+           Debug.Log(Vector3.Dot(IsForMe.GetChild(1).position,Neutralizer)+"waah"+Vector3.Dot(agent.destination,Neutralizer));
             if (Vector3.Dot(IsForMe.GetChild(1).position,Neutralizer) == Vector3.Dot(agent.destination,Neutralizer))
             {
 
                 gameObject.layer = LayerSeated;
                 Assignedbooth = IsForMe.gameObject;
                 BroadcastMessage("StartTimer");
-              //Debug.Log(+"HELLO");
+              Debug.Log("HELLO");
 
             }
             //print("why god");

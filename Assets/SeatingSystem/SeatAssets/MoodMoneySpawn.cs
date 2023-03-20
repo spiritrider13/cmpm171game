@@ -5,7 +5,7 @@ using UnityEngine;
 public class MoodMoneySpawn : MonoBehaviour
 {
     public MoneyFabList moneysizes;
-  
+   
     // Start is called before the first frame update
     void Start()
     {
@@ -22,6 +22,7 @@ public class MoodMoneySpawn : MonoBehaviour
 
     public void MoodBasedTip(int tipsize)
     {
+        SendMessageUpwards("Empty");
         switch (tipsize)
         {
           case 0:
