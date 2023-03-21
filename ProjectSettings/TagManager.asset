@@ -21,7 +21,7 @@ TagManager:
   - UI
   - Interact
   - Projectile
-  - Player
+  - 
   - booth seats
   - booth backing
   - window
@@ -31,7 +31,7 @@ TagManager:
   - walls
   - Customers
   - SeatedCustomers
-  - 
+  - Player
   - 
   - 
   - 
