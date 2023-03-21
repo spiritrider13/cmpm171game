@@ -22,31 +22,21 @@ public class tutorial : MonoBehaviour
     {
         timer += Time.deltaTime;
 
-        if (startInteraction && ePushed && timer >= 123)
+        if (startInteraction && ePushed && timer >= 105)
         {
             dialogue.text = "";
             shadow.text = "";
             timerM.timerIsRunning = true;
         }
-        else if (startInteraction && ePushed && timer >= 110)
+        else if (startInteraction && ePushed && timer >= 100)
         {
             dialogue.text = "Alright toodleoo!";
             shadow.text = "Alright toodleoo!";
         }
-        else if (startInteraction && ePushed && timer >= 100)
+        else if (startInteraction && ePushed && timer >= 90)
         {
             dialogue.text = "Alright, that's it for me now. Good luck rookie! I'll be on my vacation now, don't bother reaching out to me, I won't answer.";
             shadow.text = "Alright, that's it for me now. Good luck rookie! I'll be on my vacation now, don't bother reaching out to me, I won't answer.";
-        }
-        else if (startInteraction && ePushed && timer >= 94)
-        {
-            dialogue.text = "Over here on the right is your inventory, you can't hold much in this gun so be sure to check this often!";
-            shadow.text = "Over here on the right is your inventory, you can't hold much in this gun so be sure to check this often!";
-        }
-        else if (startInteraction && ePushed && timer >= 90)
-        {
-            dialogue.text = "Now here's where you can check how many seats have been taken up.";
-            shadow.text = "Now here's where you can check how many seats have been taken up.";
         }
         else if (startInteraction && ePushed && timer >= 86)
         {
