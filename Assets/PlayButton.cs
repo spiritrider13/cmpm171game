@@ -7,7 +7,7 @@ public class PlayButton : MonoBehaviour
 {
     public void PlayGame()
     {
-        if (SceneManager.GetActiveScene().buildIndex == 2){
+        if ((SceneManager.GetActiveScene().buildIndex == 2) || (SceneManager.GetActiveScene().buildIndex == 3)){
             SceneManager.LoadScene(1);
         }
         else{

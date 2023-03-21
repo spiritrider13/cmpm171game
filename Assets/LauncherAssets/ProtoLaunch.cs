@@ -43,7 +43,7 @@ public class ProtoLaunch : MonoBehaviour
     {
 
         GameObject NewProjectile = Instantiate(Ammo, transform.GetChild(3).transform.position, transform.GetChild(3).transform.rotation);
-        NewProjectile.GetComponent<Rigidbody>().AddRelativeForce(new Vector3( 0, LaunchVel, 0));
+        NewProjectile.GetComponent<Rigidbody>().AddRelativeForce(new Vector3( 0, LaunchVel * 10f, 0));
     }
 
   //  public void SetProjectile(GameObject projectile)

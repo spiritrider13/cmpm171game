@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: inventory.general
   m_EditorClassIdentifier: 
   m_Repository:
-    rid: 6787944365940801536
+    rid: 3042453610355752960
   references:
     version: 2
     RefIds:
-    - rid: 6787944365940801536
+    - rid: 3042453610355752960
       type: {class: InventoryRepository, ns: GameCreator.Runtime.Inventory, asm: GameCreator.Runtime.Inventory}
       data:
         m_Items:
