@@ -49,8 +49,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Instructions:
     m_Instructions:
-    - rid: 255464189439508508
-    - rid: 255464189439508504
+    - rid: 255464315927658505
+    - rid: 255464315927658506
   m_InBackground: 1
   m_TriggerEvent:
     rid: 255464189439508502
@@ -72,7 +72,15 @@ MonoBehaviour:
             m_Bits: 4294967295
     - rid: 255464189439508503
       type: {class: GetGameObjectPlayer, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
-    - rid: 255464189439508504
+    - rid: 255464315927658505
+      type: {class: InstructionLogicRaiseSignal, ns: GameCreator.Runtime.VisualScripting, asm: GameCreator.Runtime.Core}
+      data:
+        m_IsExpanded: 1
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_Signal:
+          m_String: LargeScore
+    - rid: 255464315927658506
       type: {class: InstructionGameObjectDestroy, ns: GameCreator.Runtime.VisualScripting, asm: GameCreator.Runtime.Core}
       data:
         m_IsExpanded: 1
@@ -80,17 +88,9 @@ MonoBehaviour:
         m_IsEnabled: 1
         m_GameObject:
           m_Property:
-            rid: 255464189439508506
-    - rid: 255464189439508506
+            rid: 255464315927658508
+    - rid: 255464315927658508
       type: {class: GetGameObjectSelf, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
-    - rid: 255464189439508508
-      type: {class: InstructionLogicRaiseSignal, ns: GameCreator.Runtime.VisualScripting, asm: GameCreator.Runtime.Core}
-      data:
-        m_IsExpanded: 1
-        m_Breakpoint: 0
-        m_IsEnabled: 1
-        m_Signal:
-          m_String: LargeCash
 --- !u!212 &1908550035313141913
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -167,5 +167,5 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.9, y: 0.9, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.9, y: 0.9, z: 0.4993441}
+  m_Center: {x: 0, y: 0, z: 0.049215563}

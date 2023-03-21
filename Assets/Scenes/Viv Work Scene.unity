@@ -1840,6 +1840,7 @@ GameObject:
   - component: {fileID: 204755051}
   - component: {fileID: 204755050}
   - component: {fileID: 204755049}
+  - component: {fileID: 204755052}
   m_Layer: 0
   m_Name: MoneyManager
   m_TagString: Money
@@ -1984,6 +1985,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Instructions:
     m_Instructions:
+    - rid: 255464315927658501
     - rid: 255464287891882000
   m_InBackground: 1
   m_TriggerEvent:
@@ -2017,6 +2019,88 @@ MonoBehaviour:
                 m_StringArgument: 
                 m_BoolArgument: 0
               m_CallState: 1
+    - rid: 255464315927658501
+      type: {class: InstructionCommonDebugText, ns: GameCreator.Runtime.VisualScripting, asm: GameCreator.Runtime.Core}
+      data:
+        m_IsExpanded: 1
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_Message:
+          m_Property:
+            rid: 255464315927658502
+    - rid: 255464315927658502
+      type: {class: GetStringString, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Value: Ill tell you wat you donkey
+--- !u!114 &204755052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 204755046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ecd922218e245e2b85d51f9f08338c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Instructions:
+    m_Instructions:
+    - rid: 255464315927658515
+    - rid: 255464315927658512
+  m_InBackground: 1
+  m_TriggerEvent:
+    rid: 255464315927658511
+  references:
+    version: 2
+    RefIds:
+    - rid: 255464315927658511
+      type: {class: EventOnReceiveSignal, ns: GameCreator.Runtime.VisualScripting, asm: GameCreator.Runtime.Core}
+      data:
+        m_Signal:
+          m_String: endgame
+    - rid: 255464315927658512
+      type: {class: InstructionLogicCallMethod, ns: GameCreator.Runtime.VisualScripting, asm: GameCreator.Runtime.Core}
+      data:
+        m_IsExpanded: 1
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_Method:
+          m_PersistentCalls:
+            m_Calls:
+            - m_Target: {fileID: 204755047}
+              m_TargetAssemblyTypeName: MoneyMoneyMoney, Assembly-CSharp
+              m_MethodName: addScore
+              m_Mode: 3
+              m_Arguments:
+                m_ObjectArgument: {fileID: 0}
+                m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+                m_IntArgument: 0
+                m_FloatArgument: 0
+                m_StringArgument: 
+                m_BoolArgument: 0
+              m_CallState: 2
+    - rid: 255464315927658515
+      type: {class: InstructionLogicCallMethod, ns: GameCreator.Runtime.VisualScripting, asm: GameCreator.Runtime.Core}
+      data:
+        m_IsExpanded: 1
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_Method:
+          m_PersistentCalls:
+            m_Calls:
+            - m_Target: {fileID: 204755047}
+              m_TargetAssemblyTypeName: MoneyMoneyMoney, Assembly-CSharp
+              m_MethodName: forthefunny
+              m_Mode: 1
+              m_Arguments:
+                m_ObjectArgument: {fileID: 0}
+                m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+                m_IntArgument: 0
+                m_FloatArgument: 0
+                m_StringArgument: 
+                m_BoolArgument: 0
+              m_CallState: 2
 --- !u!1 &233791887
 GameObject:
   m_ObjectHideFlags: 0
@@ -10499,7 +10583,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 981e37582fe907a4080b42ea4836f400, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeRemaining: 480
+  timeRemaining: 1
   timerIsRunning: 0
   lengthOfTime: {fileID: 573313979}
 --- !u!4 &1828595467

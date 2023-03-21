@@ -21,6 +21,7 @@ MonoBehaviour:
   m_NameList:
     m_Source:
     - rid: 255464313615810560
+    - rid: 255464313615810569
   references:
     version: 2
     RefIds:
@@ -36,6 +37,23 @@ MonoBehaviour:
           m_String: smoking
     - rid: 255464313615810566
       type: {class: ValueBool, ns: GameCreator.Runtime.Variables, asm: GameCreator.Runtime.Core}
+      data:
+        m_IsExpanded: 1
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_Value: 0
+    - rid: 255464313615810569
+      type: {class: NameVariable, ns: GameCreator.Runtime.Variables, asm: GameCreator.Runtime.Core}
+      data:
+        m_IsExpanded: 1
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_Value:
+          rid: 255464313615810571
+        m_Name:
+          m_String: Musicval
+    - rid: 255464313615810571
+      type: {class: ValueNumber, ns: GameCreator.Runtime.Variables, asm: GameCreator.Runtime.Core}
       data:
         m_IsExpanded: 1
         m_Breakpoint: 0

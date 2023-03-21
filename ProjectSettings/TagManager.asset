@@ -12,6 +12,7 @@ TagManager:
   - Customer
   - Booth1
   - Exit
+  - sussyscore
   layers:
   - Default
   - TransparentFX
