@@ -8,6 +8,7 @@ public class DropDownScript : MonoBehaviour
     public GameObject image2;
     public GameObject image3;
 
+
     public AudioSource music1;
 
     public AudioSource music2;
@@ -20,6 +21,11 @@ public class DropDownScript : MonoBehaviour
         
     }
 
+    void OnAwake()
+    {
+        DontDestroyOnLoad(transform.gameObject);
+        //DontDestroyOnLoad()
+    }
     // Update is called once per frame
     void Update()
     {

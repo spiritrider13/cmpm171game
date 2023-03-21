@@ -31,13 +31,13 @@ MonoBehaviour:
         m_Breakpoint: 0
         m_IsEnabled: 1
         m_Value:
-          rid: 255464313615810561
+          rid: 255464313615810566
         m_Name:
-          m_String: my-variable
-    - rid: 255464313615810561
-      type: {class: ValueNumber, ns: GameCreator.Runtime.Variables, asm: GameCreator.Runtime.Core}
+          m_String: smoking
+    - rid: 255464313615810566
+      type: {class: ValueBool, ns: GameCreator.Runtime.Variables, asm: GameCreator.Runtime.Core}
       data:
         m_IsExpanded: 1
         m_Breakpoint: 0
         m_IsEnabled: 1
-        m_Value: 5
+        m_Value: 0

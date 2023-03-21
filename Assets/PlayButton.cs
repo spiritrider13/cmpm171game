@@ -7,8 +7,11 @@ public class PlayButton : MonoBehaviour
 {
     public void PlayGame()
     {
+        Cursor.visible = false;
+       
         if ((SceneManager.GetActiveScene().buildIndex == 2) || (SceneManager.GetActiveScene().buildIndex == 3)){
             SceneManager.LoadScene(1);
+
         }
         else{
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
