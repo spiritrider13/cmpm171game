@@ -28,15 +28,10 @@ public class tutorial : MonoBehaviour
             shadow.text = "";
             timerM.timerIsRunning = true;
         }
-        else if (startInteraction && ePushed && timer >= 120)
+        else if (startInteraction && ePushed && timer >= 110)
         {
             dialogue.text = "Alright toodleoo!";
             shadow.text = "Alright toodleoo!";
-        }
-        else if (startInteraction && ePushed && timer >= 110)
-        {
-            dialogue.text = "Oh and one last thing, we're obligated to give you a break so if you need one just go ahead and press the Esc key.";
-            shadow.text = "Oh and one last thing, we're obligated to give you a break so if you need one just go ahead and press the Esc key.";
         }
         else if (startInteraction && ePushed && timer >= 100)
         {
@@ -75,8 +70,8 @@ public class tutorial : MonoBehaviour
         }
         else if (startInteraction && ePushed && timer >= 63)
         {
-            dialogue.text = "Look, they even left a tip. Go towards it to pick it up";
-            shadow.text = "Look, they even left a tip. Go towards it to pick it up";
+            dialogue.text = "Look, they even left a tip. Go towards it and press E to pick it up";
+            shadow.text = "Look, they even left a tip. Go towards it and press E to pick it up";
         }
         else if (startInteraction && ePushed && timer >= 60)
         {

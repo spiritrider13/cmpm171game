@@ -237,7 +237,7 @@ MonoBehaviour:
         m_AudioClip: {fileID: 8300000, guid: edc793a8e6dc5af4695aa94c0c95147a, type: 3}
         m_WaitToComplete: 0
         m_Config:
-          m_Volume: 1
+          m_Volume: 75
           m_Pitch: {x: 1, y: 1}
           m_TransitionIn: 0
           m_UpdateMode: 0

@@ -50,6 +50,7 @@ MonoBehaviour:
   m_Instructions:
     m_Instructions:
     - rid: 255464315927658505
+    - rid: 6787944365940801597
     - rid: 255464315927658506
   m_InBackground: 1
   m_TriggerEvent:
@@ -91,6 +92,27 @@ MonoBehaviour:
             rid: 255464315927658508
     - rid: 255464315927658508
       type: {class: GetGameObjectSelf, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+    - rid: 6787944365940801597
+      type: {class: InstructionCommonAudioSFXPlay, ns: GameCreator.Runtime.VisualScripting, asm: GameCreator.Runtime.Core}
+      data:
+        m_IsExpanded: 1
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_AudioClip: {fileID: 8300000, guid: d8d9efea409d51d49ac072f955e2048a, type: 3}
+        m_WaitToComplete: 0
+        m_Config:
+          m_Volume: 75
+          m_Pitch: {x: 1, y: 1}
+          m_TransitionIn: 0
+          m_UpdateMode: 0
+          m_SpatialBlend: 0
+          m_Target:
+            m_Property:
+              rid: 6787944365940801598
+    - rid: 6787944365940801598
+      type: {class: GetGameObjectInstance, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_GameObject: {fileID: 0}
 --- !u!212 &1908550035313141913
 SpriteRenderer:
   m_ObjectHideFlags: 0
