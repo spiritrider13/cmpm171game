@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: -9032806905018802828}
   - component: {fileID: 2152536683982678630}
   - component: {fileID: 8614314874361433209}
+  - component: {fileID: 7093423998838624505}
   m_Layer: 7
   m_Name: ItemDish
   m_TagString: Dish
@@ -196,3 +197,55 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
+--- !u!114 &7093423998838624505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8918287836569051884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ecd922218e245e2b85d51f9f08338c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Instructions:
+    m_Instructions:
+    - rid: 6787944365940801595
+  m_InBackground: 1
+  m_TriggerEvent:
+    rid: 6787944365940801593
+  references:
+    version: 2
+    RefIds:
+    - rid: 6787944365940801593
+      type: {class: EventCollideWith, ns: GameCreator.Runtime.VisualScripting, asm: GameCreator.Runtime.Core}
+      data:
+        m_Collider:
+          m_Option: 0
+          m_GameObject:
+            m_Property:
+              rid: 6787944365940801594
+    - rid: 6787944365940801594
+      type: {class: GetGameObjectPlayer, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+    - rid: 6787944365940801595
+      type: {class: InstructionCommonAudioSFXPlay, ns: GameCreator.Runtime.VisualScripting, asm: GameCreator.Runtime.Core}
+      data:
+        m_IsExpanded: 1
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_AudioClip: {fileID: 8300000, guid: edc793a8e6dc5af4695aa94c0c95147a, type: 3}
+        m_WaitToComplete: 0
+        m_Config:
+          m_Volume: 1
+          m_Pitch: {x: 1, y: 1}
+          m_TransitionIn: 0
+          m_UpdateMode: 0
+          m_SpatialBlend: 0
+          m_Target:
+            m_Property:
+              rid: 6787944365940801596
+    - rid: 6787944365940801596
+      type: {class: GetGameObjectInstance, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_GameObject: {fileID: 0}
